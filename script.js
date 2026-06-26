@@ -1372,17 +1372,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     currentCardIndex++;
                     const targetScroll = st.start + (currentCardIndex / (cards.length - 1)) * (st.end - st.start);
                     
-                    // Fail-safe to unlock scrolling after 600ms under any circumstances
+                    // Fail-safe to unlock scrolling after 750ms under any circumstances
                     const unlockTimeout = setTimeout(() => {
                         isAnimatingCard = false;
-                    }, 600);
+                    }, 750);
 
                     lenis.scrollTo(targetScroll, {
-                        duration: 0.5,
+                        duration: 0.35,
                         force: true,
                         onComplete: () => {
-                            clearTimeout(unlockTimeout);
-                            isAnimatingCard = false;
+                            // Devour remaining trackpad inertia before unlocking
+                            setTimeout(() => {
+                                clearTimeout(unlockTimeout);
+                                isAnimatingCard = false;
+                            }, 250);
                         }
                     });
                 }
@@ -1396,17 +1399,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     currentCardIndex--;
                     const targetScroll = st.start + (currentCardIndex / (cards.length - 1)) * (st.end - st.start);
                     
-                    // Fail-safe to unlock scrolling after 600ms under any circumstances
+                    // Fail-safe to unlock scrolling after 750ms under any circumstances
                     const unlockTimeout = setTimeout(() => {
                         isAnimatingCard = false;
-                    }, 600);
+                    }, 750);
 
                     lenis.scrollTo(targetScroll, {
-                        duration: 0.5,
+                        duration: 0.35,
                         force: true,
                         onComplete: () => {
-                            clearTimeout(unlockTimeout);
-                            isAnimatingCard = false;
+                            // Devour remaining trackpad inertia before unlocking
+                            setTimeout(() => {
+                                clearTimeout(unlockTimeout);
+                                isAnimatingCard = false;
+                            }, 250);
                         }
                     });
                 }
