@@ -209,22 +209,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Common scrubbed ScrollTrigger setup function
         const initScrubbedLogoTrigger = () => {
-            gsap.to('#shared-logo', {
-                scrollTrigger: {
-                    trigger: '#slide-hero',
-                    start: 'top top',
-                    end: 'bottom top',
-                    scrub: true,
-                    invalidateOnRefresh: true,
+            gsap.fromTo('#shared-logo', 
+                {
+                    x: '50vw',
+                    y: '28vh',
+                    xPercent: -50,
+                    yPercent: -50,
+                    scale: 4.0,
+                    transformOrigin: 'center center'
                 },
-                x: () => window.innerWidth * 0.05, // Align with left edge of container (5vw)
-                y: 40, // 40px from top
-                xPercent: 0,
-                yPercent: 0,
-                scale: 1.0,
-                transformOrigin: 'left center',
-                ease: 'none'
-            });
+                {
+                    scrollTrigger: {
+                        trigger: '#slide-hero',
+                        start: 'top top',
+                        end: 'bottom top',
+                        scrub: true,
+                        invalidateOnRefresh: true,
+                    },
+                    x: () => window.innerWidth * 0.05, // Align with left edge of container (5vw)
+                    y: 40, // 40px from top
+                    xPercent: 0,
+                    yPercent: 0,
+                    scale: 1.0,
+                    transformOrigin: 'left center',
+                    ease: 'none'
+                }
+            );
         };
 
         if (isScrolledPastHero) {
