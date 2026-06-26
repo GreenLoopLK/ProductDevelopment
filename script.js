@@ -212,10 +212,10 @@ document.addEventListener('DOMContentLoaded', () => {
             gsap.fromTo('#shared-logo', 
                 {
                     x: '50vw',
-                    y: '28vh',
+                    y: '35vh',
                     xPercent: -50,
                     yPercent: -50,
-                    scale: 2.0,
+                    scale: 0.85,
                     transformOrigin: 'center center'
                 },
                 {
@@ -259,10 +259,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Set logo to starting position (centered on hero) before animating
             gsap.set('#shared-logo', {
                 x: '50vw',
-                y: '28vh',
+                y: '35vh',
                 xPercent: -50,
                 yPercent: -50,
-                scale: 1.2,
+                scale: 0.55,
                 opacity: 0,
                 transformOrigin: 'center center'
             });
@@ -270,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Logo placeholder fade + scale entrance
             loadTL.to('#shared-logo', {
                 opacity: 1,
-                scale: 2.0,
+                scale: 0.85,
                 duration: 0.8,
                 ease: 'power3.out'
             })
