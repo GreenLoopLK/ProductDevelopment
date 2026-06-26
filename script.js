@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     y: '28vh',
                     xPercent: -50,
                     yPercent: -50,
-                    scale: 1.0,
+                    scale: 2.0,
                     transformOrigin: 'center center'
                 },
                 {
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 y: '28vh',
                 xPercent: -50,
                 yPercent: -50,
-                scale: 0.7,
+                scale: 1.2,
                 opacity: 0,
                 transformOrigin: 'center center'
             });
@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Logo placeholder fade + scale entrance
             loadTL.to('#shared-logo', {
                 opacity: 1,
-                scale: 1.0,
+                scale: 2.0,
                 duration: 0.8,
                 ease: 'power3.out'
             })
