@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="only light">
+    <title>Green Loop — Premium Reverse Vending Machine Recycling Service Portal</title>
+    <meta name="description" content="Strategic collaboration guidelines with the John Keells Group detailing the Green Loop RVM Recycling Service.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CDNs -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=2.0">
+</head>
+<body>
+
+    <!-- Custom Spotlight Cursor -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-circle"></div>
+
+    <!-- Viewport Container -->
+    <div class="viewport-container">
+        
+        <!-- Blueprint Grid & Mesh Background -->
+        <div class="bg-grid"></div>
+        <div class="bg-mesh-container">
+            <div class="bg-mesh-blob blob-1"></div>
+            <div class="bg-mesh-blob blob-2"></div>
+        </div>
+
+        <!-- Shared Morph Layer -->
+        <div class="shared-canvas-layer">
+            <!-- Brand Logo Placeholder -->
+            <div class="shared-brand-logo" id="shared-logo">
+                <img src="assets/greenloop_logo.png" alt="Green Loop Logo" class="brand-logo-img" style="height: 32px; width: auto; display: block; object-fit: contain;">
+            </div>
+            
+            <!-- Morphing Blueprint Frame -->
+            <div class="shared-morph-frame" id="shared-frame">
+                <span class="frame-label" id="shared-frame-lbl">[ Green Loop System Canvas ]</span>
+                <span class="frame-coords" id="shared-frame-coords">DX:0 DY:0</span>
+            </div>
+        </div>
+
+        <!-- Floating Vertical Dot Navigation -->
+        <nav class="dot-nav">
+            <ul>
+                <li><a href="#slide-hero" class="dot-link active" data-sec="slide-hero"><span class="dot-label">00. Hero</span></a></li>
+                <li><a href="#slide-overview" class="dot-link" data-sec="slide-overview"><span class="dot-label">01. Introduction</span></a></li>
+                <li><a href="#slide-directory" class="dot-link" data-sec="slide-directory"><span class="dot-label">02. Directory</span></a></li>
+                <li><a href="#slide-conflict" class="dot-link" data-sec="slide-conflict"><span class="dot-label">03. Waste Crisis</span></a></li>
+                <li><a href="#slide-survey" class="dot-link" data-sec="slide-survey"><span class="dot-label">04. Primary Survey</span></a></li>
+                <li><a href="#slide-competitors" class="dot-link" data-sec="slide-competitors"><span class="dot-label">05. Competitors</span></a></li>
+                <li><a href="#slide-usp" class="dot-link" data-sec="slide-usp"><span class="dot-label">06. Product USP</span></a></li>
+                <li><a href="#slide-decisions" class="dot-link" data-sec="slide-decisions"><span class="dot-label">07. Materials Spec</span></a></li>
+                <li><a href="#slide-logo" class="dot-link" data-sec="slide-logo"><span class="dot-label">08. Logomark Specs</span></a></li>
+                <li><a href="#slide-construction" class="dot-link" data-sec="slide-construction"><span class="dot-label">09. Logo Geometry</span></a></li>
+                <li><a href="#slide-colors" class="dot-link" data-sec="slide-colors"><span class="dot-label">10. Color System</span></a></li>
+                <li><a href="#slide-type" class="dot-link" data-sec="slide-type"><span class="dot-label">11. Typography Scale</span></a></li>
+                <li><a href="#slide-photo" class="dot-link" data-sec="slide-photo"><span class="dot-label">12. Photo Guidelines</span></a></li>
+                <li><a href="#slide-iconography" class="dot-link" data-sec="slide-iconography"><span class="dot-label">13. Iconography Grid</span></a></li>
+                <li><a href="#slide-applications" class="dot-link" data-sec="slide-applications"><span class="dot-label">14. Touchpoint Specs</span></a></li>
+                <li><a href="#slide-mkt-campaigns" class="dot-link" data-sec="slide-mkt-campaigns"><span class="dot-label">15. POS Campaigns</span></a></li>
+                <li><a href="#slide-mkt-channels" class="dot-link" data-sec="slide-mkt-channels"><span class="dot-label">16. Media Channels</span></a></li>
+                <li><a href="#slide-rvm-render" class="dot-link" data-sec="slide-rvm-render"><span class="dot-label">17. RVM Appearance</span></a></li>
+                <li><a href="#slide-rvm-dimensions" class="dot-link" data-sec="slide-rvm-dimensions"><span class="dot-label">18. Hardware Specs</span></a></li>
+                <li><a href="#slide-placement" class="dot-link" data-sec="slide-placement"><span class="dot-label">19. Supermarket Lobby</span></a></li>
+                <li><a href="#slide-rvm-screen" class="dot-link" data-sec="slide-rvm-screen"><span class="dot-label">20. Touchscreen UI</span></a></li>
+                <li><a href="#slide-rvm-app" class="dot-link" data-sec="slide-rvm-app"><span class="dot-label">21. Companion App</span></a></li>
+                <li><a href="#slide-rewards" class="dot-link" data-sec="slide-rewards"><span class="dot-label">22. Nexus Rewards</span></a></li>
+                <li><a href="#slide-telemetry" class="dot-link" data-sec="slide-telemetry"><span class="dot-label">23. Smart Sensors</span></a></li>
+                <li><a href="#slide-logistics" class="dot-link" data-sec="slide-logistics"><span class="dot-label">24. Reverse Logistics</span></a></li>
+                <li><a href="#slide-journey" class="dot-link" data-sec="slide-journey"><span class="dot-label">25. Shopper Journey</span></a></li>
+                <li><a href="#slide-habit-loop" class="dot-link" data-sec="slide-habit-loop"><span class="dot-label">26. Habit Formation</span></a></li>
+                <li><a href="#slide-bus-model" class="dot-link" data-sec="slide-bus-model"><span class="dot-label">27. Joint Strategic Value</span></a></li>
+                <li><a href="#slide-bus-financials" class="dot-link" data-sec="slide-bus-financials"><span class="dot-label">28. CAPEX / OPEX</span></a></li>
+                <li><a href="#slide-bus-roadmap" class="dot-link" data-sec="slide-bus-roadmap"><span class="dot-label">29. Growth Roadmap</span></a></li>
+                <li><a href="#slide-future-education" class="dot-link" data-sec="slide-future-education"><span class="dot-label">30. Civic Education</span></a></li>
+                <li><a href="#slide-mkt-calendar" class="dot-link" data-sec="slide-mkt-calendar"><span class="dot-label">31. Nature Campaigns</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Slide Wrapper -->
+        <main class="content-wrapper">
+
+<section id="slide-hero" class="slide-section active-slide" data-logo-center="true">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="meta-tag split-word">Product & Service Development Document</span>
+                        <h1 class="split-line">Green Loop</h1>
+                        <p class="tagline split-line">A Reverse Vending Machine (RVM) Recycling Service designed in strategic collaboration with the John Keells Group.</p>
+                        <div class="hero-cta-wrap reveal-element" style="margin-top: var(--space-md); display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                            <span class="mono-label" style="color: var(--color-keells-green-dark); font-weight: 600;">"Recycling, Rewarded Instantly."</span>
+                            <a href="#slide-overview" class="cta-button" style="margin-top: 8px;">Explore Project Pitch <span class="arrow">↓</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-overview" class="slide-section" data-frame-target="#overview-frame-target">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">01 / Introduction</span>
+                        <h2 class="split-line">Moving from Passive to Incentivised Recycling</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">1.1 The Conflict</span>
+                                <h4>Plastic Waste & Passive Disposal</h4>
+                                <p>Sri Lanka generates a substantial volume of single-use plastic waste each year, much of which bypasses formal recycling. John Keells Group’s Plasticcycle initiative has placed recycling bins at retail outlets and public spaces, collecting over 215,000 kg of plastic waste. However, the bin model is fundamentally passive — it depends entirely on a person's pre-existing motivation, with no immediate feedback, reward, or proof of impact returned. The action and reward remain disconnected.</p>
+                            </div>
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">1.2 The Hero</span>
+                                <h4>Instant, Rewarded Recycling</h4>
+                                <p>Green Loop closes the loop between action and reward. A user inserts a plastic bottle; the machine scans, verifies, compacts, and sorts it; and the user is rewarded immediately in Keells Nexus points before they walk away. The machine turns a vague environmental good intention into a concrete, instant transaction.</p>
+                            </div>
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">1.3 Beyond Recycling</span>
+                                <h4>The Habit Loop Features</h4>
+                                <p>To build a lasting habit loop, the system integrates streak tracking, school leaderboards, and shareable personal-impact stats (kg recycled, bottles diverted, and CO₂e saved). This engagement layer exists purely to keep people motivated beyond the base utility of recycling.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column">
+                            <div class="placeholder-frame has-image ratio-4-3" id="overview-frame-target" style="width: 100%;">
+                                <img src="assets/overview_illustration.png" alt="Active Loop Illustration">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-directory" class="slide-section" data-frame-hide="true" data-blob1-color="#6DBB45" data-blob1-x="15vw" data-blob1-y="20vh" data-blob1-scale="1.2" data-blob2-color="#FFD54A" data-blob2-x="-10vw" data-blob2-y="-10vh" data-blob2-scale="1.0">
+                <div class="container" style="height: 85vh; display: flex; flex-direction: column; justify-content: center;">
+                    <div class="section-header" style="margin-bottom: var(--space-xs);">
+                        <span class="section-num">02 / Portal Directory</span>
+                        <h2 class="split-line" style="font-size: 2rem;">Strategic Guidelines Directory</h2>
+                    </div>
+                    <div class="directory-grid-13 reveal-element">
+                        
+                        <!-- Module 1: Research -->
+                        <a href="#slide-conflict" class="directory-card">
+                            <div>
+                                <span class="dir-num">01</span>
+                                <h3>Research</h3>
+                            </div>
+                            <p>Waste statistics, surveys, and barriers.</p>
+                        </a>
+
+                        <!-- Module 2: Product Definition -->
+                        <a href="#slide-usp" class="directory-card">
+                            <div>
+                                <span class="dir-num">02</span>
+                                <h3>Product Definition</h3>
+                            </div>
+                            <p>Active loops and Green Loop USP.</p>
+                        </a>
+
+                        <!-- Module 3: Branding -->
+                        <a href="#slide-logo" class="directory-card">
+                            <div>
+                                <span class="dir-num">03</span>
+                                <h3>Branding & Identity</h3>
+                            </div>
+                            <p>Logomarks, colors, and type guidelines.</p>
+                        </a>
+
+                        <!-- Module 4: Marketing -->
+                        <a href="#slide-mkt-campaigns" class="directory-card">
+                            <div>
+                                <span class="dir-num">04</span>
+                                <h3>Marketing</h3>
+                            </div>
+                            <p>Launch channels, ad templates, and campaigns.</p>
+                        </a>
+
+                        <!-- Module 5: Machine Design -->
+                        <a href="#slide-rvm-render" class="directory-card">
+                            <div>
+                                <span class="dir-num">05</span>
+                                <h3>Machine Design</h3>
+                            </div>
+                            <p>RVM mockups and outer branding skins.</p>
+                        </a>
+
+                        <!-- Module 6: Machine Placement -->
+                        <a href="#slide-placement" class="directory-card">
+                            <div>
+                                <span class="dir-num">06</span>
+                                <h3>Machine Placement</h3>
+                            </div>
+                            <p>Entrance vestibules and lobby layouts.</p>
+                        </a>
+
+                        <!-- Module 7: User Experience -->
+                        <a href="#slide-rvm-screen" class="directory-card">
+                            <div>
+                                <span class="dir-num">07</span>
+                                <h3>User Experience</h3>
+                            </div>
+                            <p>Touchscreen flows and app mockups.</p>
+                        </a>
+
+                        <!-- Module 8: Reward System -->
+                        <a href="#slide-rewards" class="directory-card">
+                            <div>
+                                <span class="dir-num">08</span>
+                                <h3>Reward System</h3>
+                            </div>
+                            <p>Nexus points conversion and carbon metrics.</p>
+                        </a>
+
+                        <!-- Module 9: Collection Process -->
+                        <a href="#slide-telemetry" class="directory-card">
+                            <div>
+                                <span class="dir-num">09</span>
+                                <h3>Collection Process</h3>
+                            </div>
+                            <p>Telemetry alerts and logistics dispatch cycles.</p>
+                        </a>
+
+                        <!-- Module 10: Customer Journey -->
+                        <a href="#slide-journey" class="directory-card">
+                            <div>
+                                <span class="dir-num">10</span>
+                                <h3>Customer Journey</h3>
+                            </div>
+                            <p>Recycler steps and feedback loops.</p>
+                        </a>
+
+                        <!-- Module 11: Revenue Model -->
+                        <a href="#slide-bus-model" class="directory-card">
+                            <div>
+                                <span class="dir-num">11</span>
+                                <h3>Revenue Model</h3>
+                            </div>
+                            <p>Customer retention and PET flake sales value.</p>
+                        </a>
+
+                        <!-- Module 12: Financial Plans -->
+                        <a href="#slide-bus-financials" class="directory-card">
+                            <div>
+                                <span class="dir-num">12</span>
+                                <h3>Financial Plans</h3>
+                            </div>
+                            <p>CAPEX/OPEX budgets and funding matrices.</p>
+                        </a>
+
+                        <!-- Module 13: Future Plans -->
+                        <a href="#slide-bus-roadmap" class="directory-card">
+                            <div>
+                                <span class="dir-num">13</span>
+                                <h3>Future Plans</h3>
+                            </div>
+                            <p>Next-gen sorting and double-points campaigns.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-conflict" class="slide-section" data-frame-target="#conflict-frame-target">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">01.1 / Waste Statistics</span>
+                        <h2 class="split-line">The Plastic Waste Problem & Motivation Gap</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">National Plastic Consumption</span>
+                                <h4>Sri Lankan Waste Crisis</h4>
+                                <p>Sri Lanka generates a massive volume of single-use plastic waste annually, consuming over 300,000 metric tons of plastic. The national formal recycling rate stands at less than 10%, meaning over 90% of plastic waste bypasses formal recycling channels, clogging wetlands, waterways, and landfill sites such as Karadiyana and Dompe.</p>
+                            </div>
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">The Motivation Barrier</span>
+                                <h4>Passive Disposal Limits</h4>
+                                <p>John Keells Group's Plasticcycle initiative has worked to close this gap since 2017, placing recycling bins at retail outlets and public spaces, and collecting over 215,000 kg of plastic waste. However, the bin model is fundamentally passive — it depends entirely on a person's pre-existing motivation, with no immediate feedback, reward, or proof of impact returned. The action and reward are disconnected, capping participation well below potential.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column">
+                            <div class="placeholder-frame ratio-4-3" id="conflict-frame-target">
+                                <svg class="reveal-element" viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; padding: 25px 35px;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Grid lines -->
+                                    <line x1="60" y1="50" x2="360" y2="50" stroke="rgba(46, 46, 46, 0.05)" stroke-width="1" />
+                                    <line x1="60" y1="120" x2="360" y2="120" stroke="rgba(46, 46, 46, 0.05)" stroke-width="1" />
+                                    <line x1="60" y1="190" x2="360" y2="190" stroke="rgba(46, 46, 46, 0.05)" stroke-width="1" />
+                                    <line x1="60" y1="260" x2="360" y2="260" stroke="rgba(46, 46, 46, 0.15)" stroke-width="1.5" />
+                                    
+                                    <!-- Axis Labels -->
+                                    <text x="50" y="54" font-family="var(--font-mono)" font-size="9" fill="var(--color-text-muted)" text-anchor="end">300k t</text>
+                                    <text x="50" y="124" font-family="var(--font-mono)" font-size="9" fill="var(--color-text-muted)" text-anchor="end">200k t</text>
+                                    <text x="50" y="194" font-family="var(--font-mono)" font-size="9" fill="var(--color-text-muted)" text-anchor="end">100k t</text>
+                                    <text x="50" y="264" font-family="var(--font-mono)" font-size="9" fill="var(--color-text-muted)" text-anchor="end">0</text>
+                                    
+                                    <!-- Bar 1: Consumption -->
+                                    <rect x="110" y="50" width="60" height="210" fill="var(--color-text-charcoal)" rx="4" />
+                                    <text x="140" y="40" font-family="var(--font-heading)" font-size="12" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">300,000t</text>
+                                    <text x="140" y="280" font-family="var(--font-heading)" font-size="10" font-weight="600" fill="var(--color-text-charcoal)" text-anchor="middle">Consumed</text>
+                                    
+                                    <!-- Bar 2: Recycled -->
+                                    <rect x="250" y="240" width="60" height="20" fill="var(--color-keells-green)" rx="4" />
+                                    <text x="280" y="230" font-family="var(--font-heading)" font-size="12" font-weight="700" fill="var(--color-keells-green-dark)" text-anchor="middle">&lt;10%</text>
+                                    <text x="280" y="280" font-family="var(--font-heading)" font-size="10" font-weight="600" fill="var(--color-keells-green-dark)" text-anchor="middle">Recycled</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-survey" class="slide-section" data-frame-target="#survey-frame-target" data-blob1-color="#3D8B37" data-blob1-x="15vw" data-blob1-y="30vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="-15vw" data-blob2-y="-10vh" data-blob2-scale="0.9">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">01.2 / Survey Analysis</span>
+                        <h2 class="split-line">Primary Survey Results & Demand Validation</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">Primary Survey Data</span>
+                                <h4>Verifying Consumer Motivation</h4>
+                                <p>A primary survey conducted with over 30+ respondents validated the demand for instant rewards. When asked: <em>"Would you use a machine that instantly rewards you for recycling a bottle?"</em>, <strong class="highlight-sweep">100% of respondents</strong> answered affirmatively. Additionally, <strong class="highlight-sweep">87% of respondents</strong> stated that the lack of convenient, incentivised drop-off points is their primary barrier to recycling plastic bottles regularly.</p>
+                            </div>
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Preferred Reward Channels</span>
+                                <h4>Incentive Preference Rankings</h4>
+                                <p>The survey surfaced strong user preference for instant grocery discounts (Nexus loyalty points) and mobile top-up reload credits over charitable donations. This directly shaped our choice of integrating the service with the John Keells Nexus loyalty program, matching the highest frequency shopper behavior.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column">
+                            <div class="placeholder-frame ratio-4-3 transparent-bg" id="survey-frame-target">
+                                <div class="concentric-rings-container">
+                                    <svg class="concentric-rings-svg" viewBox="0 0 200 200">
+                                        <!-- Grid lines -->
+                                        <line x1="100" y1="0" x2="100" y2="200" stroke="rgba(46, 46, 46, 0.05)" stroke-width="0.8" />
+                                        <line x1="0" y1="100" x2="200" y2="100" stroke="rgba(46, 46, 46, 0.05)" stroke-width="0.8" />
+                                        
+                                        <!-- Rings -->
+                                        <circle class="ring ring-1" cx="100" cy="100" r="30" stroke="rgba(109, 187, 69, 0.15)" stroke-width="1.5" fill="none" />
+                                        <circle class="ring ring-2" cx="100" cy="100" r="50" stroke="rgba(109, 187, 69, 0.25)" stroke-width="2" fill="none" />
+                                        <circle class="ring ring-3" cx="100" cy="100" r="70" stroke="rgba(109, 187, 69, 0.35)" stroke-width="2" fill="none" stroke-dasharray="4 2" />
+                                        <circle class="ring ring-4" cx="100" cy="100" r="85" stroke="var(--color-keells-green)" stroke-width="2.5" fill="none" />
+                                    </svg>
+                                    <!-- Center Label -->
+                                    <div class="concentric-center-label">
+                                        <div class="concentric-number">87%</div>
+                                        <div class="concentric-text">Barrier</div>
+                                    </div>
+                                </div>
+                                <span class="frame-label" style="font-size: 0.75rem;">[ 87% identify lack of instant incentives as primary recycling barrier ]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-competitors" class="slide-section" data-frame-target=".strategy-table-wrapper" data-blob1-color="#6DBB45" data-blob1-x="10vw" data-blob1-y="30vh" data-blob1-scale="1.2" data-blob2-color="#FFD54A" data-blob2-x="-25vw" data-blob2-y="20vh" data-blob2-scale="1.1">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">01.3 / Competitor Matrix</span>
+                        <h2 class="split-line">Competitor & Landscape Analysis</h2>
+                    </div>
+                    <div class="strategy-table-wrapper reveal-element" style="margin-bottom: var(--space-xs);">
+                        <table class="strategy-table" style="font-size: 0.75rem;">
+                            <thead>
+                                <tr>
+                                    <th>Product / Initiative</th>
+                                    <th>Position & Limitations</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Plasticcycle (John Keells Group)</strong></td>
+                                    <td>Bin-based passive collection network — 300+ bins, 215,000+ kg collected since 2017. No individual incentive or instant feedback; relies entirely on voluntary disposal.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Trash2Cash (Chakra Suthra, Sri Lanka)</strong></td>
+                                    <td>Sri Lanka’s first plastic-for-reward recycling system, exchanging plastic for mobile reload credit. Confirms local demand for incentivised recycling; no public RVM hardware network identified at scale.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>TOMRA (Global Market Leader)</strong></td>
+                                    <td>91,000+ RVM installations across 60+ markets; deposit-return systems achieve up to 98% return rates. Enterprise-grade hardware, not localised for a Sri Lankan retail or CSR-partnership model.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tadweer (UAE)</strong></td>
+                                    <td>Government-backed RVM network paired with a consumer rewards app. Strong template for the hardware + app + CSR loop; not present in Sri Lanka.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Generic RVM Manufacturers (China/India)</strong></td>
+                                    <td>Off-the-shelf machines with barcode scanning, compaction, and printed/SMS coupons. Affordable hardware base, but no brand, no local partner network, no app ecosystem.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="reveal-element" style="padding: 10px; background: rgba(109, 187, 69, 0.05); border-left: 3px solid var(--color-keells-green); border-radius: 4px;">
+                        <p style="font-size: 0.8rem; line-height: 1.4; color: var(--color-text-charcoal);"><strong>Key takeaway:</strong> No local player currently combines instant reward + retail-embedded placement + a corporate sustainability partner with an existing collection and processing network. Positioning the RVM service alongside Plasticcycle’s infrastructure fills this gap.</p>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-usp" class="slide-section" data-frame-target="#usp-frame-target">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">02.1 / USP</span>
+                        <h2 class="split-line">Unique Selling Proposition</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">The Core Concept Statement</span>
+                                <h4>"Recycling, Rewarded Instantly."</h4>
+                                <p>Green Loop is a Reverse Vending Machine (RVM) service that closes the loop between action and reward. It is designed to plug directly into the John Keells Group's sustainability network, providing users with immediate points, checkouts discounts, and environmental statistics in exchange for empty plastic bottles.</p>
+                            </div>
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Service Core Goals</span>
+                                <h4>Driving Circular Action</h4>
+                                <p>Instead of relying on a person's voluntary environmental good intentions, the RVM turns recycling into an immediate transaction. It is a premium product experience that bridges the physical action of dropping a bottle and the digital receipt of loyalty incentives, creating a repeatable habit loop.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div id="usp-frame-target" class="placeholder-frame ratio-4-3" style="width: 100%;">
+                                <svg class="reveal-element" viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; padding: 25px;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Background Elements -->
+                                    <circle cx="200" cy="150" r="140" fill="none" stroke="rgba(109, 187, 69, 0.03)" stroke-width="1" />
+                                    <circle cx="200" cy="150" r="90" fill="none" stroke="rgba(109, 187, 69, 0.03)" stroke-width="1" />
+                                    
+                                    <!-- Flow 1: Traditional Passive Bins -->
+                                    <text x="25" y="40" font-family="var(--font-mono)" font-size="9" font-weight="700" fill="var(--color-text-muted)" letter-spacing="1">A. TRADITIONAL PASSIVE BIN</text>
+                                    <g transform="translate(25, 55)">
+                                        <!-- Node 1 -->
+                                        <rect x="0" y="0" width="80" height="35" rx="6" fill="#E5E7EB" stroke="rgba(46, 46, 46, 0.1)" stroke-width="1" />
+                                        <text x="40" y="21" font-family="var(--font-heading)" font-size="10" font-weight="600" fill="var(--color-text-charcoal)" text-anchor="middle">1. Discard</text>
+                                        
+                                        <!-- Connector -->
+                                        <line x1="80" y1="17.5" x2="130" y2="17.5" stroke="rgba(46, 46, 46, 0.2)" stroke-width="1.5" stroke-dasharray="3 3" />
+                                        <polygon points="130,17.5 125,14 125,21" fill="rgba(46, 46, 46, 0.4)" />
+                                        
+                                        <!-- Node 2 -->
+                                        <rect x="130" y="0" width="80" height="35" rx="6" fill="#E5E7EB" stroke="rgba(46, 46, 46, 0.1)" stroke-width="1" />
+                                        <text x="170" y="21" font-family="var(--font-heading)" font-size="10" font-weight="600" fill="var(--color-text-charcoal)" text-anchor="middle">2. Passive Bin</text>
+                                        
+                                        <!-- Connector -->
+                                        <line x1="210" y1="17.5" x2="260" y2="17.5" stroke="rgba(46, 46, 46, 0.2)" stroke-width="1.5" stroke-dasharray="3 3" />
+                                        <polygon points="260,17.5 255,14 255,21" fill="rgba(46, 46, 46, 0.4)" />
+                                        
+                                        <!-- Node 3 (No reward) -->
+                                        <rect x="260" y="0" width="90" height="35" rx="6" fill="rgba(239, 68, 68, 0.05)" stroke="rgba(239, 68, 68, 0.2)" stroke-width="1" />
+                                        <text x="305" y="21" font-family="var(--font-heading)" font-size="10" font-weight="700" fill="#EF4444" text-anchor="middle">No Incentive</text>
+                                    </g>
+                                    
+                                    <!-- Flow 2: Green Loop Active System -->
+                                    <text x="25" y="160" font-family="var(--font-mono)" font-size="9" font-weight="700" fill="var(--color-keells-green-dark)" letter-spacing="1">B. GREEN LOOP ACTIVE SYSTEM</text>
+                                    <g transform="translate(25, 175)">
+                                        <!-- Node 1 -->
+                                        <rect x="0" y="0" width="80" height="35" rx="6" fill="var(--color-keells-green-light)" stroke="rgba(109, 187, 69, 0.3)" stroke-width="1" />
+                                        <text x="40" y="21" font-family="var(--font-heading)" font-size="10" font-weight="600" fill="var(--color-keells-green-dark)" text-anchor="middle">1. Deposit</text>
+                                        
+                                        <!-- Connector -->
+                                        <line x1="80" y1="17.5" x2="130" y2="17.5" stroke="var(--color-keells-green)" stroke-width="1.5" />
+                                        <polygon points="130,17.5 125,14 125,21" fill="var(--color-keells-green-dark)" />
+                                        
+                                        <!-- Node 2 -->
+                                        <rect x="130" y="0" width="80" height="35" rx="6" fill="var(--color-keells-green-light)" stroke="rgba(109, 187, 69, 0.3)" stroke-width="1" />
+                                        <text x="170" y="21" font-family="var(--font-heading)" font-size="10" font-weight="600" fill="var(--color-keells-green-dark)" text-anchor="middle">2. Scan & Crush</text>
+                                        
+                                        <!-- Connector -->
+                                        <line x1="210" y1="17.5" x2="260" y2="17.5" stroke="var(--color-keells-green)" stroke-width="1.5" />
+                                        <polygon points="260,17.5 255,14 255,21" fill="var(--color-keells-green-dark)" />
+                                        
+                                        <!-- Node 3 (Rewards) -->
+                                        <rect x="260" y="0" width="90" height="35" rx="6" fill="var(--color-keells-green)" stroke="var(--color-keells-green-dark)" stroke-width="1.5" />
+                                        <text x="305" y="21" font-family="var(--font-heading)" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">Nexus Points</text>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-decisions" class="slide-section" data-frame-target="#decisions-frame-target" data-blob1-color="#3D8B37" data-blob1-x="-15vw" data-blob1-y="30vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="0.9">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">02.2 / Product Decisions</span>
+                        <h2 class="split-line">Feasibility Decisions & Accepted Materials</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column" style="display: flex; flex-direction: column; justify-content: center; gap: var(--space-xs);">
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Initial Service Scope</span>
+                                <ul style="list-style-type: square; margin-left: 20px; font-size: 0.8rem; line-height: 1.6; color: var(--color-text-muted);">
+                                    <li><strong>Deposit Mechanism:</strong> Single-bottle horizontal intake slot with physical scanners to prevent double-feeding.</li>
+                                    <li><strong>Reward Medium:</strong> Direct integration with the Keells Nexus card, posting points instantly to shopper profiles.</li>
+                                    <li><strong>Accepted Materials:</strong> Clean, dry PET plastic bottles of all standard sizes (250ml - 2L). Aluminum can sorting to be introduced in Phase 3.</li>
+                                    <li><strong>First Placement Site:</strong> Selected pilot supermarket vestibules in the Colombo Metropolitan Area.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column">
+                            <div id="decisions-frame-target" class="placeholder-frame ratio-4-3" style="width: 100%;">
+                                <svg class="reveal-element" viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; padding: 20px;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Grid -->
+                                    <line x1="200" y1="20" x2="200" y2="280" stroke="rgba(46, 46, 46, 0.05)" stroke-width="1" stroke-dasharray="2 2" />
+                                    
+                                    <!-- PET 01 -->
+                                    <g transform="translate(100, 120)">
+                                        <path d="M 0,-40 L 35,20 L -35,20 Z" fill="none" stroke="var(--color-keells-green)" stroke-width="3" stroke-linejoin="round" />
+                                        <path d="M -5,-35 L 5,-35 L 0,-45 Z" fill="var(--color-keells-green)" />
+                                        <path d="M 30,15 L 38,23 L 38,10 Z" fill="var(--color-keells-green)" />
+                                        <path d="M -35,20 L -25,20 L -30,28 Z" fill="var(--color-keells-green)" />
+                                        
+                                        <text x="0" y="5" font-family="var(--font-heading)" font-size="16" font-weight="800" fill="var(--color-keells-green-dark)" text-anchor="middle">01</text>
+                                        <text x="0" y="45" font-family="var(--font-heading)" font-size="12" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">PET</text>
+                                        <rect x="-40" y="55" width="80" height="20" rx="4" fill="var(--color-keells-green)" />
+                                        <text x="0" y="68" font-family="var(--font-mono)" font-size="8" font-weight="800" fill="#FFFFFF" text-anchor="middle">ACCEPTED</text>
+                                    </g>
+                                    
+                                    <!-- HDPE 02 -->
+                                    <g transform="translate(300, 120)">
+                                        <path d="M 0,-40 L 35,20 L -35,20 Z" fill="none" stroke="var(--color-keells-green)" stroke-width="3" stroke-linejoin="round" />
+                                        <path d="M -5,-35 L 5,-35 L 0,-45 Z" fill="var(--color-keells-green)" />
+                                        <path d="M 30,15 L 38,23 L 38,10 Z" fill="var(--color-keells-green)" />
+                                        <path d="M -35,20 L -25,20 L -30,28 Z" fill="var(--color-keells-green)" />
+                                        
+                                        <text x="0" y="5" font-family="var(--font-heading)" font-size="16" font-weight="800" fill="var(--color-keells-green-dark)" text-anchor="middle">02</text>
+                                        <text x="0" y="45" font-family="var(--font-heading)" font-size="12" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">HDPE</text>
+                                        <rect x="-40" y="55" width="80" height="20" rx="4" fill="var(--color-keells-green)" />
+                                        <text x="0" y="68" font-family="var(--font-mono)" font-size="8" font-weight="800" fill="#FFFFFF" text-anchor="middle">ACCEPTED</text>
+                                    </g>
+                                    
+                                    <!-- Exclusion Label/Details in Center -->
+                                    <g transform="translate(200, 120)">
+                                        <circle cx="0" cy="0" r="30" fill="rgba(239, 68, 68, 0.05)" stroke="rgba(239, 68, 68, 0.2)" stroke-width="1" stroke-dasharray="3 3" />
+                                        <text x="0" y="-5" font-family="var(--font-heading)" font-size="8" font-weight="700" fill="#EF4444" text-anchor="middle">PVC / METAL</text>
+                                        <text x="0" y="10" font-family="var(--font-mono)" font-size="8" font-weight="800" fill="#EF4444" text-anchor="middle">EXCLUDED</text>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-logo" class="slide-section" data-frame-target="#logo-frame-target">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">03.1 / Logo</span>
+                        <h2 class="split-line">Logomark & Construction</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="guideline-card reveal-element">
+                            <span class="mono-label">03.1.1 Primary Logo</span>
+                            <div class="placeholder-frame ratio-16-9" id="logo-frame-target">
+                                <svg viewBox="0 0 600 338" style="width: 100%; height: 100%; display: block; background: #F9FAFB;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Outer Border / Drafting Frame -->
+                                    <rect x="30" y="30" width="540" height="278" fill="none" stroke="rgba(109, 187, 69, 0.1)" stroke-width="1" stroke-dasharray="4 4" />
+                                    
+                                    <!-- Logo Container -->
+                                    <g transform="translate(130, 120)">
+                                        <!-- Logomark (Green concentric loops) -->
+                                        <g transform="translate(40, 40)">
+                                            <circle cx="0" cy="0" r="32" fill="none" stroke="var(--color-keells-green)" stroke-width="5" />
+                                            <circle cx="0" cy="0" r="20" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="4" />
+                                            <path d="M 0,-32 L 8,-32 L 0,-40 Z" fill="var(--color-keells-green-dark)" />
+                                            <path d="M 0,20 L -8,20 L 0,28 Z" fill="var(--color-keells-green)" />
+                                        </g>
+                                        
+                                        <!-- Wordmark -->
+                                        <text x="95" y="45" font-family="var(--font-heading)" font-size="32" font-weight="800" fill="var(--color-text-charcoal)" letter-spacing="-1">green loop</text>
+                                        <text x="97" y="61" font-family="var(--font-mono)" font-size="9" font-weight="700" fill="var(--color-keells-green-dark)" letter-spacing="2">RECYCLING, REWARDED.</text>
+                                    </g>
+                                    
+                                    <!-- Clear Space Guides -->
+                                    <line x1="80" y1="80" x2="520" y2="80" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                                    <text x="530" y="84" font-family="var(--font-mono)" font-size="8" fill="#EF4444">Safe Margin (1.5X)</text>
+                                    <line x1="80" y1="240" x2="520" y2="240" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                                    <line x1="80" y1="80" x2="80" y2="240" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                                    <line x1="520" y1="80" x2="520" y2="240" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                                    
+                                    <!-- Clear space dimension arrows -->
+                                    <line x1="80" y1="160" x2="120" y2="160" stroke="#EF4444" stroke-width="1" />
+                                    <polygon points="80,160 85,157 85,163" fill="#EF4444" />
+                                    <polygon points="120,160 115,157 115,163" fill="#EF4444" />
+                                    <text x="100" y="152" font-family="var(--font-mono)" font-size="8" fill="#EF4444" text-anchor="middle">1.5X</text>
+                                </svg>
+                            </div>
+                            <p class="card-desc">The primary horizontal mark, combining the recycling loop logomark with clean custom sans-serif typography. Optimized for retail store lobbies and the physical RVM outer skin.</p>
+                        </div>
+                        <div class="guideline-card reveal-element">
+                            <span class="mono-label">03.1.2 Stacked Variant</span>
+                            <div class="placeholder-frame ratio-16-9">
+                                <svg viewBox="0 0 600 338" style="width: 100%; height: 100%; display: block; background: #F9FAFB;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Stacked Logo Spec -->
+                                    <g transform="translate(300, 169)">
+                                        <!-- Logomark -->
+                                        <g transform="translate(0, -50)">
+                                            <circle cx="0" cy="0" r="32" fill="none" stroke="var(--color-keells-green)" stroke-width="5" />
+                                            <circle cx="0" cy="0" r="20" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="4" />
+                                            <path d="M 0,-32 L 8,-32 L 0,-40 Z" fill="var(--color-keells-green-dark)" />
+                                            <path d="M 0,20 L -8,20 L 0,28 Z" fill="var(--color-keells-green)" />
+                                        </g>
+                                        <!-- Wordmark stacked -->
+                                        <text x="0" y="25" font-family="var(--font-heading)" font-size="36" font-weight="800" fill="var(--color-text-charcoal)" letter-spacing="-1" text-anchor="middle">green loop</text>
+                                        <text x="0" y="48" font-family="var(--font-mono)" font-size="10" font-weight="700" fill="var(--color-keells-green-dark)" letter-spacing="2" text-anchor="middle">RECYCLING, REWARDED.</text>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p class="card-desc">The secondary stacked logo layout, designed for narrow vertical spaces such as coupons, receipts, and companion app screens.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-construction" class="slide-section" data-frame-target="#geo-frame-target" data-blob1-color="#3D8B37" data-blob1-x="15vw" data-blob1-y="30vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="-15vw" data-blob2-y="-10vh" data-blob2-scale="0.9">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">03.2 / Geometry</span>
+                        <h2 class="split-line">Logo Construction Grid & Constraints</h2>
+                    </div>
+                    <div class="grid grid-3">
+                        <div class="guideline-card reveal-element">
+                            <span class="mono-label">03.2.1 Clear Space</span>
+                            <div class="placeholder-frame ratio-1-1" id="geo-frame-target">
+                                <svg viewBox="0 0 300 300" style="width: 100%; height: 100%; display: block; padding: 15px; background: #FFFFFF;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Blueprint Grid Background -->
+                                    <g stroke="rgba(109, 187, 69, 0.04)" stroke-width="0.5">
+                                        <line x1="30" y1="0" x2="30" y2="300" />
+                                        <line x1="60" y1="0" x2="60" y2="300" />
+                                        <line x1="90" y1="0" x2="90" y2="300" />
+                                        <line x1="120" y1="0" x2="120" y2="300" />
+                                        <line x1="150" y1="0" x2="150" y2="300" />
+                                        <line x1="180" y1="0" x2="180" y2="300" />
+                                        <line x1="210" y1="0" x2="210" y2="300" />
+                                        <line x1="240" y1="0" x2="240" y2="300" />
+                                        <line x1="270" y1="0" x2="270" y2="300" />
+                                        <line x1="0" y1="30" x2="300" y2="30" />
+                                        <line x1="0" y1="60" x2="300" y2="60" />
+                                        <line x1="0" y1="90" x2="300" y2="90" />
+                                        <line x1="0" y1="120" x2="300" y2="120" />
+                                        <line x1="0" y1="150" x2="300" y2="150" />
+                                        <line x1="0" y1="180" x2="300" y2="180" />
+                                        <line x1="0" y1="210" x2="300" y2="210" />
+                                        <line x1="0" y1="240" x2="300" y2="240" />
+                                        <line x1="0" y1="270" x2="300" y2="270" />
+                                    </g>
+                                    
+                                    <!-- Axis lines -->
+                                    <line x1="150" y1="0" x2="150" y2="300" stroke="rgba(109, 187, 69, 0.15)" stroke-width="1" />
+                                    <line x1="0" y1="150" x2="300" y2="150" stroke="rgba(109, 187, 69, 0.15)" stroke-width="1" />
+                                    
+                                    <!-- 45-degree guide lines -->
+                                    <line x1="0" y1="0" x2="300" y2="300" stroke="rgba(109, 187, 69, 0.2)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    <line x1="300" y1="0" x2="0" y2="300" stroke="rgba(109, 187, 69, 0.2)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    
+                                    <!-- Geometric Rings -->
+                                    <circle cx="150" cy="150" r="80" fill="none" stroke="rgba(46, 46, 46, 0.1)" stroke-width="1" />
+                                    <circle cx="150" cy="150" r="50" fill="none" stroke="rgba(46, 46, 46, 0.1)" stroke-width="1" stroke-dasharray="2 2" />
+                                    
+                                    <circle cx="150" cy="150" r="64" fill="none" stroke="var(--color-keells-green)" stroke-width="3" />
+                                    <circle cx="150" cy="150" r="40" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="2.5" />
+                                    
+                                    <!-- Dimension labels and extension arrows -->
+                                    <line x1="150" y1="150" x2="206" y2="94" stroke="#EF4444" stroke-width="1" />
+                                    <polygon points="206,94 199,96 203,101" fill="#EF4444" />
+                                    <text x="185" y="112" font-family="var(--font-mono)" font-size="8" font-weight="700" fill="#EF4444" transform="rotate(-45 185 112)">R=80px</text>
+                                    
+                                    <!-- Center compass mark -->
+                                    <circle cx="150" cy="150" r="2" fill="#EF4444" />
+                                    
+                                    <text x="155" y="145" font-family="var(--font-mono)" font-size="8" fill="#EF4444">Center (0,0)</text>
+                                    <text x="210" y="85" font-family="var(--font-mono)" font-size="8" fill="var(--color-text-muted)">45° Angle Sweep</text>
+                                </svg>
+                            </div>
+                            <p class="card-desc">A strict minimum clear space boundary equal to 1.5 times the radius of the outer symbol ring must surround the entire logomark, keeping it free from surrounding visual clutter.</p>
+                        </div>
+                        <div class="guideline-card reveal-element">
+                            <span class="mono-label">03.2.2 Grid Lines</span>
+                            <div class="placeholder-frame ratio-1-1">
+                                <svg viewBox="0 0 300 300" style="width: 100%; height: 100%; display: block; padding: 15px; background: #FFFFFF;" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="40" y="40" width="220" height="220" fill="none" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" stroke-dasharray="3 3" />
+                                    <rect x="70" y="70" width="160" height="160" fill="none" stroke="rgba(109, 187, 69, 0.2)" stroke-width="1.5" />
+                                    
+                                    <!-- Logo center -->
+                                    <g transform="translate(150, 150) scale(1.5)">
+                                        <circle cx="0" cy="0" r="16" fill="none" stroke="var(--color-keells-green)" stroke-width="3" />
+                                        <circle cx="0" cy="0" r="10" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="2" />
+                                    </g>
+                                    
+                                    <!-- safe space indicator -->
+                                    <line x1="40" y1="150" x2="70" y2="150" stroke="#EF4444" stroke-width="1" />
+                                    <polygon points="40,150 45,147 45,153" fill="#EF4444" />
+                                    <polygon points="70,150 65,147 65,153" fill="#EF4444" />
+                                    <text x="55" y="142" font-family="var(--font-mono)" font-size="8" fill="#EF4444" text-anchor="middle">1.5X</text>
+                                    <text x="150" y="250" font-family="var(--font-heading)" font-size="10" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">Safe Clearance boundary</text>
+                                </svg>
+                            </div>
+                            <p class="card-desc">The symbol geometry utilizes an outer concentric circle boundary construct mapped exactly to a 10x10 drafting division grid.</p>
+                        </div>
+                        <div class="guideline-card reveal-element">
+                            <span class="mono-label">03.2.3 Restrictions</span>
+                            <div class="placeholder-frame ratio-1-1">
+                                <svg viewBox="0 0 300 300" style="width: 100%; height: 100%; display: block; padding: 15px; background: #FFFFFF;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Logo distorted (squished) -->
+                                    <g transform="translate(80, 100) scale(1.5, 0.8)">
+                                        <circle cx="0" cy="0" r="16" fill="none" stroke="rgba(239, 68, 68, 0.5)" stroke-width="3" />
+                                        <circle cx="0" cy="0" r="10" fill="none" stroke="rgba(239, 68, 68, 0.5)" stroke-width="2" />
+                                    </g>
+                                    <!-- Big red cross over it -->
+                                    <line x1="40" y1="50" x2="120" y2="150" stroke="#EF4444" stroke-width="3" />
+                                    <line x1="120" y1="50" x2="40" y2="150" stroke="#EF4444" stroke-width="3" />
+                                    <text x="80" y="170" font-family="var(--font-heading)" font-size="10" font-weight="700" fill="#EF4444" text-anchor="middle">DO NOT DISTORT</text>
+                                    
+                                    <!-- Logo recolored wrongly -->
+                                    <g transform="translate(220, 100) scale(1.2)">
+                                        <circle cx="0" cy="0" r="16" fill="none" stroke="#3B82F6" stroke-width="3" />
+                                        <circle cx="0" cy="0" r="10" fill="none" stroke="#F59E0B" stroke-width="2" />
+                                    </g>
+                                    <!-- Big red cross over it -->
+                                    <line x1="180" y1="50" x2="260" y2="150" stroke="#EF4444" stroke-width="3" />
+                                    <line x1="260" y1="50" x2="180" y2="150" stroke="#EF4444" stroke-width="3" />
+                                    <text x="220" y="170" font-family="var(--font-heading)" font-size="10" font-weight="700" fill="#EF4444" text-anchor="middle">DO NOT RECOLOR</text>
+                                </svg>
+                            </div>
+                            <p class="card-desc">Do not recolor elements ad-hoc. Do not distort the circular loop proportions or adjust spacing alignments of the text block.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-colors" class="slide-section" data-frame-target="#color-frame-target" data-blob1-color="#6DBB45" data-blob1-x="-10vw" data-blob1-y="20vh" data-blob1-scale="1.0" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="20vh" data-blob2-scale="1.1">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">03.3 / Color Specs</span>
+                        <h2 class="split-line">Primary & Secondary Color System</h2>
+                    </div>
+                    <div class="grid grid-3" id="color-frame-target">
+                        
+                        <!-- Primary Green -->
+                        <div class="color-spec-card reveal-element">
+                            <div class="color-placeholder-box border-keells-green" style="background-color: var(--color-keells-green);">
+                                <span class="color-val-hex">#6DBB45</span>
+                            </div>
+                            <div class="color-spec-details">
+                                <span class="mono-label">03.3.1 Primary Accent Green</span>
+                                <h4>Keells Green</h4>
+                                <p>Reflects the primary corporate color of Keells Supermarkets. Used as the main accent color, active buttons, and logo markers.</p>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Dark Green -->
+                        <div class="color-spec-card reveal-element">
+                            <div class="color-placeholder-box border-dark" style="background-color: var(--color-keells-green-dark);">
+                                <span class="color-val-hex">#3D8B37</span>
+                            </div>
+                            <div class="color-spec-details">
+                                <span class="mono-label">03.3.2 Deep Forest Green</span>
+                                <h4>Downstream Green</h4>
+                                <p>Used for dark backgrounds, structural framing lines, and secondary headers. Highlights downstream collection paths.</p>
+                            </div>
+                        </div>
+
+                        <!-- Accent Yellow -->
+                        <div class="color-spec-card reveal-element">
+                            <div class="color-placeholder-box border-light" style="background-color: var(--color-keells-accent-yellow);">
+                                <span class="color-val-hex" style="color: var(--color-text-charcoal);">#FFD54A</span>
+                            </div>
+                            <div class="color-spec-details">
+                                <span class="mono-label">03.3.3 Spotlight Accent Yellow</span>
+                                <h4>Nexus Gold</h4>
+                                <p>Reflects the Keells Nexus loyalty program color. Used for highlighting reward payout panels, points figures, and key visual alerts.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-type" class="slide-section" data-frame-target="#type-frame-target" data-blob1-color="#3D8B37" data-blob1-x="10vw" data-blob1-y="30vh" data-blob1-scale="1.2" data-blob2-color="#FFD54A" data-blob2-x="-25vw" data-blob2-y="20vh" data-blob2-scale="1.1">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">03.4 / Typography</span>
+                        <h2 class="split-line">Editorial Specimen & Scale Rules</h2>
+                    </div>
+                    <div class="grid grid-2" id="type-frame-target">
+                        <div class="guideline-card reveal-element">
+                            <span class="mono-label">03.4.1 Display Typeface</span>
+                            <div class="typeface-specimen">
+                                <span class="typeface-font-name">Outfit</span>
+                                <span class="typeface-alphabet">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</span>
+                            </div>
+                            <p class="card-desc">The primary display typeface. Used exclusively for section titles, headers, and hero brand splash screens. Chosen for its clean, premium geometric curves.</p>
+                        </div>
+                        <div class="guideline-card reveal-element">
+                            <span class="mono-label">03.4.2 Body Typeface</span>
+                            <div class="typeface-specimen font-body">
+                                <span class="typeface-font-name">Inter</span>
+                                <span class="typeface-alphabet">Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz</span>
+                            </div>
+                            <p class="card-desc">The body typeface. Used for descriptions, labels, dashboard cards, and technical specification paragraphs. Offers high legibility at small sizes.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-photo" class="slide-section" data-frame-target="#photo-frame-target" data-blob1-color="#6DBB45" data-blob1-x="-15vw" data-blob1-y="30vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="1.0">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">03.5 / Imagery</span>
+                        <h2 class="split-line">Photography Art Direction Guidelines</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">03.5.1 Creative Lighting</span>
+                                <h4>High Contrast Minimalist</h4>
+                                <p>Green Loop photography guidelines dictate high-contrast, clean setups. Subjects are captured in bright ambient retail environments or natural workspaces, with primary green focal elements drawing interest. Maintain clean horizons and minimal clutter.</p>
+                            </div>
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">03.5.2 Crop Ratios</span>
+                                <h4>Symmetrical Composition</h4>
+                                <p>Images are framed symmetrically with the primary subject in the horizontal center. A crop scale grid must maintain comfortable margins, supporting dl templates, standard A4 letterheads, or mobile companion screens without clipping crucial details.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column">
+                            <div class="placeholder-frame ratio-16-9" id="photo-frame-target">
+                                <svg viewBox="0 0 600 338" style="width: 100%; height: 100%; display: block; background: #2E2E2E;" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0" y="0" width="600" height="338" fill="#F3F4F6" opacity="0.9" />
+                                    
+                                    <!-- RVM render drawing in center-left -->
+                                    <rect x="120" y="60" width="120" height="220" fill="#E5E7EB" rx="4" stroke="var(--color-keells-green)" stroke-width="2" />
+                                    <rect x="135" y="80" width="90" height="50" fill="#1F2937" rx="2" />
+                                    <circle cx="180" cy="190" r="16" fill="#10B981" opacity="0.8" />
+                                    <line x1="150" y1="190" x2="210" y2="190" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3" />
+                                    
+                                    <!-- Person silhouette in center-right -->
+                                    <g transform="translate(360, 80)">
+                                        <circle cx="40" cy="30" r="16" fill="var(--color-text-charcoal)" />
+                                        <path d="M 10,60 C 10,50 20,46 40,46 C 60,46 70,50 70,60 L 75,180 L 5,180 Z" fill="var(--color-text-charcoal)" />
+                                        <path d="M 10,90 Q -20,110 -30,120 L -30,130 Q -10,120 15,105 Z" fill="var(--color-text-charcoal)" />
+                                        <rect x="-35" y="115" width="10" height="24" rx="2" fill="var(--color-keells-green)" stroke="var(--color-keells-green-dark)" stroke-width="1" />
+                                        <rect x="-32" y="110" width="4" height="5" fill="var(--color-keells-accent-yellow)" />
+                                    </g>
+                                    
+                                    <!-- Viewfinder Rule of Thirds Grid -->
+                                    <line x1="200" y1="0" x2="200" y2="338" stroke="rgba(239, 68, 68, 0.4)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    <line x1="400" y1="0" x2="400" y2="338" stroke="rgba(239, 68, 68, 0.4)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    <line x1="0" y1="112.6" x2="600" y2="112.6" stroke="rgba(239, 68, 68, 0.4)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    <line x1="0" y1="225.3" x2="600" y2="225.3" stroke="rgba(239, 68, 68, 0.4)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    
+                                    <!-- Intersection focal points -->
+                                    <circle cx="200" cy="112.6" r="4" fill="none" stroke="#EF4444" stroke-width="1.5" />
+                                    <circle cx="400" cy="112.6" r="4" fill="none" stroke="#EF4444" stroke-width="1.5" />
+                                    <circle cx="200" cy="225.3" r="4" fill="none" stroke="#EF4444" stroke-width="1.5" />
+                                    <circle cx="400" cy="225.3" r="4" fill="none" stroke="#EF4444" stroke-width="1.5" />
+                                    
+                                    <!-- Camera framing corners -->
+                                    <path d="M 20,40 L 20,20 L 40,20" fill="none" stroke="#FFFFFF" stroke-width="2" />
+                                    <path d="M 580,40 L 580,20 L 560,20" fill="none" stroke="#FFFFFF" stroke-width="2" />
+                                    <path d="M 20,298 L 20,318 L 40,318" fill="none" stroke="#FFFFFF" stroke-width="2" />
+                                    <path d="M 580,298 L 580,318 L 560,318" fill="none" stroke="#FFFFFF" stroke-width="2" />
+                                    
+                                    <!-- Center Focus brackets -->
+                                    <path d="M 285,160 Q 285,150 295,150" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+                                    <path d="M 315,160 Q 315,150 305,150" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+                                    <path d="M 285,178 Q 285,188 295,188" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+                                    <path d="M 315,178 Q 315,188 305,188" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+                                    
+                                    <!-- Viewfinder Overlay Info -->
+                                    <rect x="0" y="318" width="600" height="20" fill="#000000" opacity="0.6" />
+                                    <text x="30" y="331" font-family="var(--font-mono)" font-size="9" fill="#FFFFFF">1/125s</text>
+                                    <text x="80" y="331" font-family="var(--font-mono)" font-size="9" fill="#FFFFFF">F/2.8</text>
+                                    <text x="130" y="331" font-family="var(--font-mono)" font-size="9" fill="#FFFFFF">ISO 200</text>
+                                    <text x="300" y="331" font-family="var(--font-mono)" font-size="9" fill="var(--color-keells-green)" text-anchor="middle">[RULE OF THIRDS GRID]</text>
+                                    <text x="570" y="331" font-family="var(--font-mono)" font-size="9" fill="#FFFFFF" text-anchor="end">RAW 16:9</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-iconography" class="slide-section" data-frame-target="#icon-frame-target" data-blob1-color="#3D8B37" data-blob1-x="-15vw" data-blob1-y="20vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="1.0">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">03.6 / Iconography</span>
+                        <h2 class="split-line">Icon Construction & Grid Rules</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column" style="display: flex; flex-direction: column; justify-content: center; gap: var(--space-xs);">
+                            <div class="overview-box reveal-element" id="icon-frame-target">
+                                <span class="mono-label">03.6.1 Construction Grid</span>
+                                <h4>Stroke Weight Standards</h4>
+                                <p>Green Loop system icons utilize a strict 2px stroke weight with 4px circular radius corners. Drawn on a 24x24px workspace canvas to ensure perfect pixel alignment and crisp, high-end rendering across screens.</p>
+                            </div>
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">03.6.2 Interaction States</span>
+                                <h4>Feedback Coloring</h4>
+                                <p>Standard inactive state icons are styled in charcoal grey. Hover state highlights transition smoothly to primary Green (#6DBB45). Active or alert icons utilize Nexus Gold (#FFD54A) to immediately draw visitor attention.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div class="icon-rules-box placeholder-frame ratio-16-9" style="width: 100%;">
+                                <svg viewBox="0 0 400 225" style="width: 100%; height: 100%; display: block; background: #FAF9F6;" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <pattern id="icon-grid" width="8" height="8" patternUnits="userSpaceOnUse">
+                                            <line x1="0" y1="0" x2="8" y2="0" stroke="rgba(109, 187, 69, 0.04)" stroke-width="0.5"/>
+                                            <line x1="0" y1="0" x2="0" y2="8" stroke="rgba(109, 187, 69, 0.04)" stroke-width="0.5"/>
+                                        </pattern>
+                                    </defs>
+                                    <rect width="100%" height="100%" fill="url(#icon-grid)"/>
+                                    <g transform="translate(200, 112.5)">
+                                        <rect x="-72" y="-72" width="144" height="144" fill="none" stroke="rgba(46, 46, 46, 0.15)" stroke-width="1" />
+                                        <g stroke="rgba(46, 46, 46, 0.05)" stroke-width="0.5">
+                                            <line x1="-60" y1="-72" x2="-60" y2="72" /><line x1="-48" y1="-72" x2="-48" y2="72" /><line x1="-36" y1="-72" x2="-36" y2="72" />
+                                            <line x1="-24" y1="-72" x2="-24" y2="72" /><line x1="-12" y1="-72" x2="-12" y2="72" /><line x1="0" y1="-72" x2="0" y2="72" />
+                                            <line x1="12" y1="-72" x2="12" y2="72" /><line x1="24" y1="-72" x2="24" y2="72" /><line x1="36" y1="-72" x2="36" y2="72" />
+                                            <line x1="48" y1="-72" x2="48" y2="72" /><line x1="60" y1="-72" x2="60" y2="72" />
+                                            <line x1="-72" y1="-60" x2="72" y2="-60" /><line x1="-72" y1="-48" x2="72" y2="-48" /><line x1="-72" y1="-36" x2="72" y2="-36" />
+                                            <line x1="-72" y1="-24" x2="72" y2="-24" /><line x1="-72" y1="-12" x2="72" y2="-12" /><line x1="-72" y1="0" x2="72" y2="0" />
+                                            <line x1="-72" y1="12" x2="72" y2="12" /><line x1="-72" y1="24" x2="72" y2="24" /><line x1="-72" y1="36" x2="72" y2="36" />
+                                            <line x1="-72" y1="48" x2="72" y2="48" /><line x1="-72" y1="60" x2="72" y2="60" />
+                                        </g>
+                                        <line x1="-72" y1="-72" x2="72" y2="72" stroke="rgba(109, 187, 69, 0.2)" stroke-width="0.8" stroke-dasharray="2 2" />
+                                        <line x1="72" y1="-72" x2="-72" y2="72" stroke="rgba(109, 187, 69, 0.2)" stroke-width="0.8" stroke-dasharray="2 2" />
+                                        <circle cx="0" cy="0" r="60" fill="none" stroke="rgba(109, 187, 69, 0.2)" stroke-width="0.8" />
+                                        <circle cx="0" cy="0" r="42" fill="none" stroke="rgba(109, 187, 69, 0.2)" stroke-width="0.8" stroke-dasharray="4 2" />
+                                        <g stroke="var(--color-keells-green)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                                            <path d="M -30,-15 C -30,-35 -10,-45 10,-45 L 20,-45" />
+                                            <path d="M 12,-52 L 22,-45 L 12,-38" fill="none" stroke-width="3" />
+                                            <path d="M 35,-10 C 45,10 35,30 15,35 L 5,37" />
+                                            <path d="M 10,44 L 0,38 L 10,31" fill="none" stroke-width="3" />
+                                            <path d="M -5,35 C -25,35 -40,15 -35,-5 L -33,-15" />
+                                            <path d="M -40,-10 L -33,-20 L -26,-10" fill="none" stroke-width="3" />
+                                        </g>
+                                        <circle cx="0" cy="0" r="2.5" fill="#EF4444" />
+                                    </g>
+                                    <text x="120" y="28" font-family="var(--font-mono)" font-size="6.5" fill="#EF4444" font-weight="700">Center Anchor</text>
+                                    <line x1="120" y1="32" x2="196" y2="110" stroke="#EF4444" stroke-width="0.8" />
+                                    <text x="280" y="32" font-family="var(--font-mono)" font-size="6.5" fill="var(--color-text-muted)">Keyline Circle (r=60px)</text>
+                                    <line x1="280" y1="36" x2="242" y2="70" stroke="var(--color-text-muted)" stroke-width="0.8" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-applications" class="slide-section horizontal-scroll-slide" data-frame-hide="true">
+                <div class="horizontal-scroll-container">
+                    <div class="horizontal-header-sticky">
+                        <div class="section-header">
+                            <div class="header-titles">
+                                <span class="section-num">03.7 / Applications</span>
+                                <h2>Touchpoint Gallery Specs</h2>
+                            </div>
+                            <p class="scroll-helper">[ Scroll horizontally to explore brand applications ]</p>
+                        </div>
+                    </div>
+                    <div class="horizontal-track">
+                        
+                        <!-- Card 1 -->
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.1" data-title="Stationery Layout Specification" data-frame-label="Business Card Mockup" data-desc="Co-branded contact cards for Green Loop regional representatives, featuring JKH and Keells logos. Layout specifications: Standard 90x50mm trim size, printed on 320gsm recycled unbleached stock. Features left-aligned Outfit branding, with primary green logo accents and technical crosshair trim guides. Text is styled in charcoal (#2E2E2E).">
+                            <span class="mono-label">03.7.1 Stationery</span>
+                            <div class="placeholder-frame ratio-4-3">
+                                <svg viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; background: #FAF9F6;" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <pattern id="card-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                                            <line x1="0" y1="0" x2="10" y2="0" stroke="rgba(109, 187, 69, 0.05)" stroke-width="0.5"/>
+                                            <line x1="0" y1="0" x2="0" y2="10" stroke="rgba(109, 187, 69, 0.05)" stroke-width="0.5"/>
+                                        </pattern>
+                                    </defs>
+                                    <rect width="100%" height="100%" fill="url(#card-grid)"/>
+                                    <g stroke="rgba(46, 46, 46, 0.3)" stroke-width="0.8">
+                                        <line x1="40" y1="72" x2="55" y2="72" /><line x1="60" y1="52" x2="60" y2="67" />
+                                        <line x1="360" y1="72" x2="345" y2="72" /><line x1="340" y1="52" x2="340" y2="67" />
+                                        <line x1="40" y1="228" x2="55" y2="228" /><line x1="60" y1="248" x2="60" y2="233" />
+                                        <line x1="360" y1="228" x2="345" y2="228" /><line x1="340" y1="248" x2="340" y2="233" />
+                                    </g>
+                                    <rect x="60" y="72" width="280" height="156" rx="4" fill="#FFFFFF" stroke="rgba(46, 46, 46, 0.08)" stroke-width="1" />
+                                    <g transform="translate(90, 115) scale(0.6)">
+                                        <circle cx="0" cy="0" r="24" fill="none" stroke="var(--color-keells-green)" stroke-width="4.5" />
+                                        <circle cx="0" cy="0" r="15" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="3" />
+                                        <path d="M 0,-24 L 6,-24 L 0,-30 Z" fill="var(--color-keells-green-dark)" />
+                                        <path d="M 0,15 L -6,15 L 0,21 Z" fill="var(--color-keells-green)" />
+                                    </g>
+                                    <text x="115" y="112" font-family="var(--font-heading)" font-size="16" font-weight="800" fill="var(--color-text-charcoal)" letter-spacing="-0.5">green loop</text>
+                                    <text x="116" y="122" font-family="var(--font-mono)" font-size="5" font-weight="700" fill="var(--color-keells-green-dark)" letter-spacing="1">RECYCLING, REWARDED.</text>
+                                    <text x="90" y="152" font-family="var(--font-heading)" font-size="10" font-weight="700" fill="var(--color-text-charcoal)">Ruvini Jayasuriya</text>
+                                    <text x="90" y="162" font-family="var(--font-mono)" font-size="6.5" font-weight="600" fill="var(--color-keells-green-dark)" letter-spacing="0.5">Regional Representative</text>
+                                    <g transform="translate(90, 175)" fill="var(--color-text-muted)" font-family="var(--font-mono)" font-size="5.5" font-weight="500">
+                                        <text x="0" y="0">E: r.jayasuriya@greenloop.lk</text>
+                                        <text x="0" y="8">P: +94 77 123 4567</text>
+                                        <text x="0" y="16">A: JKH Corporate HQ, Colombo 02</text>
+                                    </g>
+                                    <rect x="270" y="88" width="50" height="20" rx="2" fill="none" stroke="rgba(46, 46, 46, 0.12)" stroke-width="0.8" stroke-dasharray="2 2" />
+                                    <text x="295" y="100" font-family="var(--font-mono)" font-size="5" fill="var(--color-text-muted)" text-anchor="middle">Keells / JKH</text>
+                                    <g stroke="#EF4444" stroke-width="0.8" opacity="0.8">
+                                        <line x1="60" y1="242" x2="340" y2="242" />
+                                        <polygon points="60,242 65,239 65,245" fill="#EF4444" />
+                                        <polygon points="340,242 335,239 335,245" fill="#EF4444" />
+                                        <line x1="352" y1="72" x2="352" y2="228" />
+                                        <polygon points="352,72 349,77 355,77" fill="#EF4444" />
+                                        <polygon points="352,228 349,223 355,223" fill="#EF4444" />
+                                    </g>
+                                    <text x="200" y="254" font-family="var(--font-mono)" font-size="8" fill="#EF4444" text-anchor="middle">Trim Width: 90 mm</text>
+                                    <text x="358" y="153" font-family="var(--font-mono)" font-size="8" fill="#EF4444" transform="rotate(90 358 153)" text-anchor="middle">Trim Height: 50 mm</text>
+                                </svg>
+                            </div>
+                            <p class="card-desc">Co-branded contact cards for Green Loop regional representatives.</p>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.2" data-title="Project Documentation Templates" data-frame-label="Project Development letterhead" data-desc="Official template for drafting joint agreements, pricing lists, and operational instructions. Layout specifications: A4 letterhead size, 24mm margin boundaries, 12mm structured gray sidebar, and dual header logs. Styled with Outfit light font headings and Inter body copies.">
+                            <span class="mono-label">03.7.2 Documentation templates</span>
+                            <div class="placeholder-frame ratio-4-3">
+                                <svg viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; background: #FAF9F6;" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <pattern id="letter-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                                            <line x1="0" y1="0" x2="10" y2="0" stroke="rgba(109, 187, 69, 0.05)" stroke-width="0.5"/>
+                                            <line x1="0" y1="0" x2="0" y2="10" stroke="rgba(109, 187, 69, 0.05)" stroke-width="0.5"/>
+                                        </pattern>
+                                    </defs>
+                                    <rect width="100%" height="100%" fill="url(#letter-grid)"/>
+                                    <rect x="110" y="30" width="180" height="240" rx="2" fill="#FFFFFF" stroke="rgba(46, 46, 46, 0.08)" stroke-width="1.5" />
+                                    <rect x="130" y="50" width="140" height="200" fill="none" stroke="rgba(239, 68, 68, 0.4)" stroke-width="0.6" stroke-dasharray="3 3" />
+                                    <g transform="translate(145, 62) scale(0.35)">
+                                        <circle cx="0" cy="0" r="24" fill="none" stroke="var(--color-keells-green)" stroke-width="5" />
+                                        <circle cx="0" cy="0" r="15" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="3" />
+                                    </g>
+                                    <text x="156" y="65" font-family="var(--font-heading)" font-size="8" font-weight="800" fill="var(--color-text-charcoal)">green loop</text>
+                                    <text x="260" y="62" font-family="var(--font-mono)" font-size="5" font-weight="700" fill="var(--color-text-muted)" text-anchor="end">JKH / KEELLS PARTNERSHIP</text>
+                                    <line x1="220" y1="65" x2="260" y2="65" stroke="var(--color-keells-green)" stroke-width="0.8" />
+                                    <rect x="110" y="30" width="16" height="240" fill="#F4F4F5" opacity="0.8" />
+                                    <line x1="126" y1="30" x2="126" y2="270" stroke="rgba(109, 187, 69, 0.3)" stroke-width="0.8" stroke-dasharray="2 2" />
+                                    <g transform="translate(118, 140) rotate(-90)" font-family="var(--font-mono)" font-size="5" fill="var(--color-text-muted)" text-anchor="middle">
+                                        <text>OFFICIAL DOCUMENT GRID v1.0</text>
+                                    </g>
+                                    <g transform="translate(136, 95)" fill="rgba(46, 46, 46, 0.45)" font-family="var(--font-mono)">
+                                        <rect x="0" y="0" width="80" height="4" rx="1" fill="var(--color-text-charcoal)" opacity="0.8" />
+                                        <rect x="0" y="10" width="128" height="2.5" rx="0.5" />
+                                        <rect x="0" y="16" width="128" height="2.5" rx="0.5" />
+                                        <rect x="0" y="22" width="120" height="2.5" rx="0.5" />
+                                        <rect x="0" y="28" width="128" height="2.5" rx="0.5" />
+                                        <rect x="0" y="34" width="85" height="2.5" rx="0.5" />
+                                        <rect x="0" y="44" width="128" height="2.5" rx="0.5" />
+                                        <rect x="0" y="50" width="128" height="2.5" rx="0.5" />
+                                        <rect x="0" y="56" width="112" height="2.5" rx="0.5" />
+                                        <rect x="0" y="76" width="45" height="3" rx="1" fill="var(--color-keells-green)" />
+                                        <rect x="0" y="84" width="60" height="2" rx="0.5" />
+                                    </g>
+                                    <g stroke="#EF4444" stroke-width="0.8" opacity="0.8">
+                                        <line x1="110" y1="50" x2="130" y2="50" />
+                                        <polygon points="110,50 115,48 115,52" fill="#EF4444" />
+                                        <polygon points="130,50 125,48 125,52" fill="#EF4444" />
+                                    </g>
+                                    <text x="120" y="44" font-family="var(--font-mono)" font-size="5" fill="#EF4444" text-anchor="middle">24mm</text>
+                                    <text x="200" y="282" font-family="var(--font-mono)" font-size="8" fill="var(--color-text-muted)" text-anchor="middle">A4 Letterhead Standard Grid</text>
+                                </svg>
+                            </div>
+                            <p class="card-desc">Official template for drafting joint agreements and operating rules.</p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.3" data-title="Corporate Mailer Specifications" data-frame-label="Envelope template mockup" data-desc="Standard correspondence envelopes with minimalist branding for corporate mailers. Layout specifications: DL and C5 formats, unbleached kraft envelopes, centering alignment lines for mechanical printing, and Green Loop logo centered on the back flap.">
+                            <span class="mono-label">03.7.3 Mailers</span>
+                            <div class="placeholder-frame ratio-4-3">
+                                <svg viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; background: #FAF9F6;" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <pattern id="envelope-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                                            <line x1="0" y1="0" x2="10" y2="0" stroke="rgba(109, 187, 69, 0.05)" stroke-width="0.5"/>
+                                            <line x1="0" y1="0" x2="0" y2="10" stroke="rgba(109, 187, 69, 0.05)" stroke-width="0.5"/>
+                                        </pattern>
+                                    </defs>
+                                    <rect width="100%" height="100%" fill="url(#envelope-grid)"/>
+                                    <rect x="55" y="85" width="290" height="130" rx="3" fill="#E6CEB3" stroke="rgba(46, 46, 46, 0.12)" stroke-width="1.5" />
+                                    <path d="M 55,85 L 140,135 L 260,135 L 345,85" fill="none" stroke="rgba(46, 46, 46, 0.15)" stroke-width="1" />
+                                    <path d="M 55,215 L 130,150 L 270,150 L 345,215" fill="none" stroke="rgba(46, 46, 46, 0.15)" stroke-width="1" />
+                                    <g transform="translate(200, 110) scale(0.65)">
+                                        <circle cx="0" cy="0" r="20" fill="#FFFFFF" stroke="var(--color-keells-green)" stroke-width="3" />
+                                        <circle cx="0" cy="0" r="12" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="2.5" />
+                                    </g>
+                                    <text x="200" y="142" font-family="var(--font-heading)" font-size="10" font-weight="800" fill="var(--color-text-charcoal)" text-anchor="middle" letter-spacing="-0.5">green loop</text>
+                                    <g stroke="#EF4444" stroke-width="0.8" opacity="0.8">
+                                        <line x1="55" y1="225" x2="345" y2="225" />
+                                        <polygon points="55,225 60,222 60,228" fill="#EF4444" />
+                                        <polygon points="345,225 340,222 340,228" fill="#EF4444" />
+                                        <line x1="45" y1="85" x2="45" y2="215" />
+                                        <polygon points="45,85 42,90 48,90" fill="#EF4444" />
+                                        <polygon points="45,215 42,210 48,210" fill="#EF4444" />
+                                    </g>
+                                    <text x="200" y="237" font-family="var(--font-mono)" font-size="8" fill="#EF4444" text-anchor="middle">Standard DL Sizing: 220 x 110 mm</text>
+                                    <text x="35" y="150" font-family="var(--font-mono)" font-size="8" fill="#EF4444" transform="rotate(-90 35 150)" text-anchor="middle">110 mm</text>
+                                    <line x1="200" y1="65" x2="200" y2="85" stroke="rgba(109, 187, 69, 0.4)" stroke-width="0.8" stroke-dasharray="2 2" />
+                                    <line x1="200" y1="215" x2="200" y2="235" stroke="rgba(109, 187, 69, 0.4)" stroke-width="0.8" stroke-dasharray="2 2" />
+                                </svg>
+                            </div>
+                            <p class="card-desc">Standard correspondence envelopes with minimalist branding.</p>
+                        </div>
+                                       <!-- Card 4 -->
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.4" data-title="Landing Page Interface Spec" data-frame-label="Landing Page UI Mockup" data-desc="Desktop site interface featuring a live machine locator, pilot coordinates, and a carbon savings counter. Layout specifications: 12-column responsive layout grid, Outfit header style, interactive map frames, and live ESG status ticker components.">
+                            <span class="mono-label">03.7.4 Landing page</span>
+                            <div class="placeholder-frame has-image ratio-4-3">
+                                <img src="assets/landing_page_mockup.png" alt="Landing Page UI Mockup">
+                            </div>
+                            <p class="card-desc">Desktop site interface featuring a live locator map and ESG counter.</p>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.5" data-title="Companion Mobile App UI Spec" data-frame-label="Mobile App Scan-to-Start UI Mockup" data-desc="Consumer mobile app layout showing point balances, interactive recycling streaks, and Nexus barcode integrations. Layout specifications: 8px vertical padding grid, bottom navigation bar, and clean interactive scan button.">
+                            <span class="mono-label">03.7.5 Companion mobile app</span>
+                            <div class="placeholder-frame has-image ratio-4-3">
+                                <img src="assets/nexus_app_mockup.png" alt="Companion App Interface Mockup">
+                            </div>
+                            <p class="card-desc">Consumer mobile app layout showing streaks and loyalty points.</p>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.6" data-title="JKH Corporate ESG Dashboard" data-frame-label="Partner Analytics Dashboard Mockup" data-desc="Corporate interface monitoring real-time fill-rates, monthly kilograms collected, and automated collection alerts. Layout specifications: 3-column metric layout, high-contrast graphs with green accents, and live error log alerts.">
+                            <span class="mono-label">03.7.6 JKH ESG Dashboard</span>
+                            <div class="placeholder-frame has-image ratio-4-3">
+                                <img src="assets/esg_dashboard_mockup.png" alt="Partner Analytics Dashboard Mockup">
+                            </div>
+                            <p class="card-desc">Corporate interface monitoring collection volume and automated alerts.</p>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.7" data-title="RVM Outer Skin Design Spec" data-frame-label="RVM Front View Spec" data-desc="Co-branded RVM visual styling wrapper mockup. Features structural outline diagrams of bottle insertion slots, touchscreen UI housing, and instant loyalty points instructions. Body panel styled in Downstream Green (#3D8B37) and Keells Green (#6DBB45).">
+                            <span class="mono-label">03.7.7 RVM Outer Skin</span>
+                            <div class="placeholder-frame has-image ratio-4-3">
+                                <img src="assets/rvm_front_view.png" alt="RVM Front View Spec">
+                            </div>
+                            <p class="card-desc">Co-branded RVM outer styling wrapper featuring screen and slot guides.</p>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.8" data-title="Lobby Placement Layout Spec" data-frame-label="Supermarket Lobby Floor Plan" data-desc="Detailed lobby placement layout diagram showing RVM kiosk coordinates within the supermarket entry vestibule. Highlights proximity to checkout lane counters and customer service desks to maximize shopper exposure and streamline bag logistics.">
+                            <span class="mono-label">03.7.8 Placement Floor Plan</span>
+                            <div class="placeholder-frame has-image ratio-4-3">
+                                <img src="assets/store_placement_map.png" alt="Supermarket Lobby Floor Plan">
+                            </div>
+                            <p class="card-desc">Lobby placement diagram mapping RVM kiosk coordinates near checkout paths.</p>
+                        </div>
+
+                        <!-- Card 9 -->
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.9" data-title="RVM Store Lobby Experience" data-frame-label="RVM Lobby Placement Mockup" data-desc="High-fidelity perspective render of the co-branded RVM kiosk installed inside a pilot supermarket lobby. Designed to validate customer experience flow, visual line-of-sight exposure, and ease of access.">
+                            <span class="mono-label">03.7.9 RVM Lobby Placement</span>
+                            <div class="placeholder-frame has-image ratio-4-3">
+                                <img src="assets/rvm_unit_render.png" alt="RVM Lobby Placement Mockup">
+                            </div>
+                            <p class="card-desc">Perspective render of the RVM kiosk in a supermarket lobby entrance.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-mkt-campaigns" class="slide-section" data-frame-target="#campaign-frame-target">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">04.1 / Launch Marketing</span>
+                        <h2 class="split-line">POS Signage & Creative Templates</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">Point-of-Sale (POS) Supermarket Signage</span>
+                                <h4>In-Store Grocery Demos</h4>
+                                <p>POS instructional flyers and posters placed next to Keells checkout counters and entry pathways direct customers to the RVM lobby kiosks. Using a simple 3-step icon guide ("Scan-Deposit-Redeem"), signage triggers immediate visual habits. Demos run during initial pilot weeks using brand ambassadors.</p>
+                            </div>
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Creative Templates Spec</span>
+                                <h4>Social Campaign Grid</h4>
+                                <p>Campaign header: "Your bottle is worth more than you think." Bold, left-aligned Outfit typography overlays placed on unbleached white workspaces with primary green highlights. Post layouts follow a strict 1:1 square crop ratio with blueprint grids.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div id="campaign-frame-target" class="placeholder-frame ratio-4-3" style="width: 100%;">
+                                <svg class="reveal-element" viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; background: #F0FDF4; padding: 25px; border-radius: 6px;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Co-Branding Header -->
+                                    <text x="25" y="35" font-family="var(--font-mono)" font-size="9" font-weight="800" fill="var(--color-keells-green-dark)" letter-spacing="2.5">GREEN LOOP × KEELLS</text>
+                                    <line x1="25" y1="42" x2="375" y2="42" stroke="rgba(109, 187, 69, 0.2)" stroke-width="1.5" />
+                                    
+                                    <!-- Slogan -->
+                                    <text x="25" y="75" font-family="var(--font-heading)" font-size="18" font-weight="800" fill="var(--color-text-charcoal)" letter-spacing="-0.5">Your bottle is worth</text>
+                                    <text x="25" y="98" font-family="var(--font-heading)" font-size="18" font-weight="800" fill="var(--color-text-charcoal)" letter-spacing="-0.5">more than you think.</text>
+                                    
+                                    <!-- Main graphic -->
+                                    <g transform="translate(300, 80) scale(0.8)">
+                                        <circle cx="0" cy="0" r="35" fill="none" stroke="var(--color-keells-green)" stroke-width="3" />
+                                        <path d="M -15,-10 C -15,-30 15,-30 15,-10 C 15,10 -15,10 -15,-10 Z" fill="var(--color-keells-green-dark)" opacity="0.2" />
+                                        <path d="M 0,-35 L 8,-35 L 0,-42 Z" fill="var(--color-keells-green-dark)" />
+                                    </g>
+                                    
+                                    <!-- The 3-Step Guide -->
+                                    <g transform="translate(25, 140)">
+                                        <!-- Step 1 -->
+                                        <g transform="translate(0, 0)">
+                                            <circle cx="20" cy="20" r="16" fill="#FFFFFF" stroke="rgba(109, 187, 69, 0.3)" stroke-width="1.5" />
+                                            <rect x="12" y="14" width="16" height="12" rx="1.5" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="1.5" />
+                                            <line x1="12" y1="18" x2="28" y2="18" stroke="var(--color-keells-green-dark)" stroke-width="1.5" />
+                                            <text x="20" y="48" font-family="var(--font-heading)" font-size="8" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">1. SCAN CARD</text>
+                                        </g>
+                                        <!-- Step 2 -->
+                                        <g transform="translate(130, 0)">
+                                            <circle cx="20" cy="20" r="16" fill="#FFFFFF" stroke="rgba(109, 187, 69, 0.3)" stroke-width="1.5" />
+                                            <rect x="15" y="11" width="10" height="18" rx="1.5" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="1.5" transform="rotate(30 20 20)" />
+                                            <text x="20" y="48" font-family="var(--font-heading)" font-size="8" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">2. DEPOSIT</text>
+                                        </g>
+                                        <!-- Step 3 -->
+                                        <g transform="translate(260, 0)">
+                                            <circle cx="20" cy="20" r="16" fill="var(--color-keells-accent-yellow)" stroke="rgba(109, 187, 69, 0.3)" stroke-width="1.5" />
+                                            <polygon points="20,10 23,17 30,17 25,21 27,28 20,24 13,28 15,21 10,17 17,17" fill="var(--color-keells-green-dark)" />
+                                            <text x="20" y="48" font-family="var(--font-heading)" font-size="8" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">3. REDEEM</text>
+                                        </g>
+                                    </g>
+                                    
+                                    <!-- Footer -->
+                                    <g transform="translate(25, 235)">
+                                        <text x="0" y="20" font-family="var(--font-heading)" font-size="9" font-weight="700" fill="var(--color-text-muted)">EARTH DAY WEEKLY DRIVE: OCT 22-29</text>
+                                        <g transform="translate(280, 0)" stroke="var(--color-text-charcoal)" stroke-width="1.5">
+                                            <line x1="0" y1="5" x2="0" y2="25" />
+                                            <line x1="4" y1="5" x2="4" y2="25" stroke-width="0.8" />
+                                            <line x1="8" y1="5" x2="8" y2="25" />
+                                            <line x1="14" y1="5" x2="14" y2="25" stroke-width="3" />
+                                            <line x1="20" y1="5" x2="20" y2="25" />
+                                            <line x1="24" y1="5" x2="24" y2="25" stroke-width="0.8" />
+                                            <line x1="28" y1="5" x2="28" y2="25" stroke-width="2" />
+                                            <line x1="34" y1="5" x2="34" y2="25" />
+                                            <line x1="40" y1="5" x2="40" y2="25" stroke-width="4" />
+                                            <line x1="48" y1="5" x2="48" y2="25" />
+                                            <text x="24" y="34" font-family="var(--font-mono)" font-size="6" stroke="none" fill="var(--color-text-charcoal)" text-anchor="middle">GREENLOOP2026</text>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-mkt-channels" class="slide-section" data-frame-target="#channels-frame-target" data-blob1-color="#3D8B37" data-blob1-x="-15vw" data-blob1-y="30vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="0.9">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">04.2 / Strategy</span>
+                        <h2 class="split-line">Marketing Channels & Objectives</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column" style="display: flex; flex-direction: column; justify-content: center; gap: var(--space-xs);">
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Outreach Channels</span>
+                                <ul style="list-style-type: square; margin-left: 20px; font-size: 0.8rem; line-height: 1.6; color: var(--color-text-muted);">
+                                    <li><strong>Digital Marketing:</strong> Short format videos on Instagram and TikTok showing user deposits and rewards.</li>
+                                    <li><strong>Content Marketing:</strong> Explainer content on plastic collection streams in Sri Lanka and behind-the-scenes video showing Eco-Spindles apparel manufacture.</li>
+                                    <li><strong>Co-branded Campaigns:</strong> Supermarket lobby banners and co-branded flyers with JKH Plasticcycle.</li>
+                                    <li><strong>Official Web Locator:</strong> Desktop web page with locator status maps and live total kg recycled counts.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column">
+                            <div id="channels-frame-target" class="placeholder-frame ratio-4-3" style="width: 100%;">
+                                <svg class="reveal-element" viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; background: #FFFFFF; padding: 15px; border-radius: 6px;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Dashboard Top Header Bar -->
+                                    <rect x="0" y="0" width="400" height="30" fill="var(--color-bg-secondary)" rx="4" />
+                                    <circle cx="10" cy="15" r="3" fill="#EF4444" />
+                                    <circle cx="18" cy="15" r="3" fill="#F59E0B" />
+                                    <circle cx="26" cy="15" r="3" fill="#10B981" />
+                                    <text x="200" y="19" font-family="var(--font-mono)" font-size="8" fill="var(--color-text-muted)" text-anchor="middle">greenloop.lk/locator</text>
+                                    
+                                    <!-- Two Column Layout -->
+                                    <g transform="translate(20, 50)">
+                                        <rect x="0" y="0" width="150" height="220" fill="var(--color-bg-secondary)" rx="6" stroke="rgba(46, 46, 46, 0.05)" stroke-width="1" />
+                                        <text x="75" y="20" font-family="var(--font-heading)" font-size="8" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">PILOT LOCATIONS</text>
+                                        <path d="M 75,45 C 75,45 78,50 80,55 C 82,60 87,65 90,75 C 93,85 100,100 97,115 C 94,130 87,150 80,165 C 75,175 70,178 65,172 C 62,165 57,150 59,135 C 61,120 65,105 68,95 C 71,85 70,70 68,65 C 66,60 71,50 75,45 Z" fill="none" stroke="rgba(46, 46, 46, 0.2)" stroke-width="1.5" stroke-linejoin="round" />
+                                        <circle cx="63" cy="135" r="6" fill="var(--color-keells-green)" opacity="0.4" />
+                                        <circle cx="63" cy="135" r="3" fill="var(--color-keells-green-dark)" />
+                                        <text x="55" y="138" font-family="var(--font-heading)" font-size="6" font-weight="800" fill="var(--color-text-charcoal)" text-anchor="end">Colombo</text>
+                                        <circle cx="77" cy="115" r="3" fill="var(--color-keells-green-dark)" />
+                                        <circle cx="70" cy="162" r="3" fill="var(--color-keells-green-dark)" />
+                                    </g>
+                                    
+                                    <g transform="translate(190, 50)">
+                                        <rect x="0" y="0" width="190" height="220" fill="none" stroke="rgba(109, 187, 69, 0.15)" stroke-width="1.5" rx="6" />
+                                        <text x="95" y="30" font-family="var(--font-heading)" font-size="9" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">LIVE IMPACT REPORT</text>
+                                        <text x="95" y="85" font-family="var(--font-heading)" font-size="28" font-weight="900" fill="var(--color-keells-green-dark)" text-anchor="middle" letter-spacing="-1">215,640</text>
+                                        <text x="95" y="105" font-family="var(--font-mono)" font-size="8" font-weight="700" fill="var(--color-text-muted)" text-anchor="middle" letter-spacing="1">KG PLASTIC RECYCLED</text>
+                                        <line x1="20" y1="120" x2="170" y2="120" stroke="rgba(46, 46, 46, 0.05)" stroke-width="1" />
+                                        <text x="95" y="145" font-family="var(--font-heading)" font-size="10" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">Active Machines: 8 / 8</text>
+                                        <text x="95" y="165" font-family="var(--font-heading)" font-size="10" font-weight="700" fill="var(--color-text-charcoal)" text-anchor="middle">Uptime Reliability: 99.4%</text>
+                                        <rect x="60" y="180" width="70" height="18" rx="9" fill="var(--color-keells-green-light)" stroke="rgba(109, 187, 69, 0.3)" stroke-width="1" />
+                                        <circle cx="72" cy="189" r="2.5" fill="#10B981" />
+                                        <text x="80" y="192" font-family="var(--font-mono)" font-size="7" font-weight="800" fill="var(--color-keells-green-dark)">SYSTEMS OK</text>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-rvm-render" class="slide-section" data-frame-target="#render-frame-target" data-blob1-color="#6DBB45" data-blob1-x="-10vw" data-blob1-y="30vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="25vw" data-blob2-y="20vh" data-blob2-scale="1.0">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">05.1 / Appearance</span>
+                        <h2 class="split-line">Machine Appearance Mockup & Skin</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column" style="display: flex; flex-direction: column; justify-content: center; gap: var(--space-xs);">
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Visual Enclosure Design</span>
+                                <h4>Premium Matte Metal Finish</h4>
+                                <p>The RVM outer shell features a premium, matte metal cabinet wrapped in the co-branded Green Loop identity skin. The cabinet front highlights the 21.5" capacitive full-HD touchscreen user interface and primary green entry slots, designed to align with modern supermarket lobby aesthetics and capture immediate customer attention.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div id="render-frame-target" class="placeholder-frame has-image ratio-16-9" style="width: 100%; max-width: 320px;">
+                                <img src="assets/rvm_unit_render.png" alt="RVM Supermarket Lobby Render">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-rvm-dimensions" class="slide-section" data-frame-target="#dimensions-frame-target" data-blob1-color="#3D8B37" data-blob1-x="-15vw" data-blob1-y="20vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="1.0">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">05.2 / Specs</span>
+                        <h2 class="split-line">Machine Footprint & Spacing</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column" style="display: flex; flex-direction: column; justify-content: center; gap: var(--space-xs);">
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Installation Footprint Details</span>
+                                <ul style="list-style-type: square; margin-left: 20px; font-size: 0.8rem; line-height: 1.6; color: var(--color-text-muted);">
+                                    <li><strong>Physical Dimensions:</strong> 1.2m width &times; 1.0m depth &times; 1.8m height footprint.</li>
+                                    <li><strong>Service Access:</strong> 1.0m front door-swing clearance is required for maintenance and bag collection.</li>
+                                    <li><strong>Mains Connection:</strong> Standard 230V AC single-phase mains power supply.</li>
+                                    <li><strong>Data Connectivity:</strong> Integrated 4G LTE telemetry loop for live dashboard updates.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div id="dimensions-frame-target" class="placeholder-frame ratio-4-3 transparent-bg" style="width: 100%;">
+                                <div class="floor-plan-container">
+                                    <svg class="floor-plan-svg" viewBox="0 0 200 150">
+                                        <!-- Grid pattern background -->
+                                        <defs>
+                                            <pattern id="floor-grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                                                <path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(46, 46, 46, 0.03)" stroke-width="0.5" />
+                                            </pattern>
+                                        </defs>
+                                        <rect width="100%" height="100%" fill="url(#floor-grid)" />
+
+                                        <!-- Clearance Area (Dashed outer) -->
+                                        <rect class="clearance-rect" x="30" y="20" width="140" height="110" fill="none" stroke="rgba(109, 187, 69, 0.15)" stroke-width="1.5" stroke-dasharray="3 3" />
+                                        
+                                        <!-- Machine Footprint Sketch Lines (Overlapping corners) -->
+                                        <g class="machine-sketch">
+                                            <line class="sketch-line s-1" x1="45" y1="40" x2="155" y2="40" stroke="var(--color-keells-green)" stroke-width="2" />
+                                            <line class="sketch-line s-2" x1="150" y1="35" x2="150" y2="115" stroke="var(--color-keells-green)" stroke-width="2" />
+                                            <line class="sketch-line s-3" x1="155" y1="110" x2="45" y2="110" stroke="var(--color-keells-green)" stroke-width="2" />
+                                            <line class="sketch-line s-4" x1="50" y1="115" x2="50" y2="35" stroke="var(--color-keells-green)" stroke-width="2" />
+                                            
+                                            <!-- Blueprint interior hatch -->
+                                            <rect class="machine-hatch" x="50" y="40" width="100" height="70" fill="rgba(109, 187, 69, 0.04)" style="opacity: 0;" />
+                                        </g>
+
+                                        <!-- Dimension lines & text (originally hidden, fade in) -->
+                                        <!-- Width: 1.2m -->
+                                        <g class="dim-line dim-width">
+                                            <line x1="50" y1="30" x2="150" y2="30" stroke="var(--color-text-muted)" stroke-width="1" />
+                                            <line x1="50" y1="25" x2="50" y2="35" stroke="var(--color-text-muted)" stroke-width="1" />
+                                            <line x1="150" y1="25" x2="150" y2="35" stroke="var(--color-text-muted)" stroke-width="1" />
+                                            <text x="100" y="22" text-anchor="middle" font-size="8" font-family="var(--font-heading)" fill="var(--color-text-charcoal)" font-weight="600">1.2m Width</text>
+                                        </g>
+                                        
+                                        <!-- Depth: 1.0m -->
+                                        <g class="dim-line dim-depth">
+                                            <line x1="160" y1="40" x2="160" y2="110" stroke="var(--color-text-muted)" stroke-width="1" />
+                                            <line x1="155" y1="40" x2="165" y2="40" stroke="var(--color-text-muted)" stroke-width="1" />
+                                            <line x1="155" y1="110" x2="165" y2="110" stroke="var(--color-text-muted)" stroke-width="1" />
+                                            <text x="170" y="78" text-anchor="middle" font-size="8" font-family="var(--font-heading)" fill="var(--color-text-charcoal)" font-weight="600" transform="rotate(90, 170, 78)">1.0m Depth</text>
+                                        </g>
+
+                                        <!-- Service Clearance callout -->
+                                        <g class="dim-line dim-clearance">
+                                            <line x1="30" y1="120" x2="170" y2="120" stroke="rgba(46, 46, 46, 0.2)" stroke-width="1" stroke-dasharray="2 2" />
+                                            <text x="100" y="132" text-anchor="middle" font-size="7" font-family="var(--font-heading)" fill="var(--color-text-muted)">1.0m Front Service Clearance</text>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span class="frame-label" style="font-size: 0.75rem;">[ Floor Clearance layout: 1.2m &times; 1.0m space boundary ]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-placement" class="slide-section" data-frame-target="#placement-frame-target">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">06.1 / Store Placement</span>
+                        <h2 class="split-line">Supermarket Lobby Placement Strategy</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">Lobby Entrance Vestibules</span>
+                                <h4>High Exposure & Easy Access</h4>
+                                <p>RVM kiosks are positioned directly inside the primary entry vestibules or exit lobbies of Keells Super outlets. Placing units at these visual bottlenecks ensures 100% shopper footfall exposure upon entering and leaving, making deposits convenient before shopping.</p>
+                            </div>
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Checkout Area Proximity</span>
+                                <h4>Service Desk & Queue Synergies</h4>
+                                <p>Locating machines in direct line-of-sight of checkout lanes and customer service desks prompts shoppers to scan app barcodes and make quick recycling deposits before starting their groceries walk. This also allows store staff to assist users and manage paper roll swaps easily.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div id="placement-frame-target" class="placeholder-frame has-image ratio-16-9" style="width: 100%;">
+                                <img src="assets/store_placement_map.png" alt="Lobby Placement Floor Plan">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-rvm-screen" class="slide-section" data-frame-target="#screen-frame-target">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">07.1 / Touchscreen UI</span>
+                        <h2 class="split-line">RVM Touchscreen Interface Steps</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">Interactive UI Steps</span>
+                                <h4>Simple 4-Step User Interface</h4>
+                                <ul style="list-style-type: decimal; margin-left: 20px; font-size: 0.8rem; line-height: 1.6; color: var(--color-text-muted);">
+                                    <li><strong>Scan Card:</strong> Tap the physical Nexus loyalty card or scan companion app QR code at the reader to log in.</li>
+                                    <li><strong>Insert Bottle:</strong> Insert clean, uncrushed plastic bottles one-by-one into the horizontal intake slot.</li>
+                                    <li><strong>Verify & Crush:</strong> Cabinet sensors scan the barcode and weights; the compaction crusher flattens the container.</li>
+                                    <li><strong>Confirm Payout:</strong> Touch "Redeem Points" to verify final collection counts and update account point totals.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div id="screen-frame-target" class="placeholder-frame ratio-4-3" style="width: 100%;">
+                                <svg class="reveal-element" viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; background: #111827; border-radius: 6px; padding: 0;" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0" y="0" width="400" height="30" fill="#1F2937" />
+                                    <circle cx="200" cy="15" r="2.5" fill="#000000" />
+                                    <rect x="0" y="30" width="400" height="50" fill="var(--color-keells-green-dark)" />
+                                    <text x="20" y="60" font-family="var(--font-heading)" font-size="14" font-weight="800" fill="#FFFFFF">green loop</text>
+                                    <text x="380" y="60" font-family="var(--font-heading)" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="end">Keells Super pilot v1.0</text>
+                                    <g transform="translate(50, 95)">
+                                        <rect x="0" y="0" width="300" height="135" rx="8" fill="#1F2937" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5" />
+                                        <text x="150" y="30" font-family="var(--font-heading)" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">TAP KEELLS NEXUS CARD</text>
+                                        <text x="150" y="45" font-family="var(--font-heading)" font-size="9" fill="var(--color-keells-accent-yellow)" text-anchor="middle">OR SCAN APP BARCODE / QR CODE</text>
+                                        <g transform="translate(135, 60)">
+                                            <rect x="0" y="0" width="30" height="30" fill="#FFFFFF" rx="2" />
+                                            <rect x="3" y="3" width="8" height="8" fill="#000000" />
+                                            <rect x="19" y="3" width="8" height="8" fill="#000000" />
+                                            <rect x="3" y="19" width="8" height="8" fill="#000000" />
+                                            <rect x="15" y="15" width="4" height="4" fill="#000000" />
+                                            <line x1="-15" y1="15" x2="45" y2="15" stroke="#EF4444" stroke-width="1.5" />
+                                            <line x1="-15" y1="15" x2="45" y2="15" stroke="rgba(239, 68, 68, 0.4)" stroke-width="4" />
+                                        </g>
+                                        <text x="150" y="115" font-family="var(--font-mono)" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">INTAKE GATE: [CLOSED] (Awaiting loyalty login)</text>
+                                    </g>
+                                    <g transform="translate(40, 248)">
+                                        <rect x="0" y="0" width="90" height="25" rx="4" fill="var(--color-keells-green)" />
+                                        <text x="45" y="16" font-family="var(--font-heading)" font-size="9" font-weight="800" fill="#FFFFFF" text-anchor="middle">ENGLISH</text>
+                                        <rect x="110" y="0" width="90" height="25" rx="4" fill="#374151" />
+                                        <text x="155" y="16" font-family="var(--font-heading)" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">සිංහල</text>
+                                        <rect x="220" y="0" width="90" height="25" rx="4" fill="#374151" />
+                                        <text x="265" y="16" font-family="var(--font-heading)" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">தமிழ்</text>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-rvm-app" class="slide-section" data-frame-target="#app-frame-target" data-blob1-color="#3D8B37" data-blob1-x="-15vw" data-blob1-y="20vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="1.0">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">07.2 / App Specs</span>
+                        <h2 class="split-line">Companion Mobile App Interface</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column" style="display: flex; flex-direction: column; justify-content: center; gap: var(--space-xs);">
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Consumer Mobile App Features</span>
+                                <ul style="list-style-type: square; margin-left: 20px; font-size: 0.8rem; line-height: 1.6; color: var(--color-text-muted);">
+                                    <li><strong>Scan-to-start QR:</strong> QR barcode on home screen links transactions to user's Nexus profile instantly.</li>
+                                    <li><strong>Live Points Balance:</strong> Real-time display of accumulated Nexus loyalty totals.</li>
+                                    <li><strong>Redemption Catalogue:</strong> Direct coupon exchange, grocery credits, and charity transfers.</li>
+                                    <li><strong>Nearby Machine Map:</strong> Interactive map showing active RVM locations and fill status.</li>
+                                    <li><strong>Personal Impact Tracker:</strong> Shareable personal-impact stats showing kg recycled, bottles diverted, and CO₂e offsets saved.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div id="app-frame-target" class="placeholder-frame has-image ratio-16-9" style="width: 100%; max-width: 280px;">
+                                <img src="assets/nexus_app_mockup.png" alt="Companion App Interface Mockup">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-rewards" class="slide-section" data-frame-target=".strategy-table-wrapper" data-blob1-color="#3D8B37" data-blob1-x="-15vw" data-blob1-y="30vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="0.9">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">08.1 / Loyalty Rewards</span>
+                        <h2 class="split-line">Keells Nexus Points Subsidy System</h2>
+                    </div>
+                    <div class="metric-row reveal-element" style="margin-bottom: var(--space-sm);">
+                        <div class="metric-card">
+                            <span class="metric-lbl">Primary Ratio</span>
+                            <div class="metric-val">25 Pts</div>
+                            <p class="metric-desc">Earned for every 20 PET bottles deposited</p>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-lbl">Exchange Value</span>
+                            <div class="metric-val">Rs. 25</div>
+                            <p class="metric-desc">Instant cash discount redeemable at checkouts</p>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-lbl">Carbon Offset</span>
+                            <div class="metric-val">0.60 kg</div>
+                            <p class="metric-desc">CO₂e emissions saved per 20 bottles crushed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="strategy-table-wrapper reveal-element">
+                        <table class="strategy-table">
+                            <thead>
+                                <tr>
+                                    <th>Bottles Deposited</th>
+                                    <th>Nexus Points Earned</th>
+                                    <th>Equivalent LKR Discount</th>
+                                    <th>Equivalent CO₂ Reduction</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>20 Bottles</strong></td>
+                                    <td>25 Points</td>
+                                    <td>Rs. 25.00</td>
+                                    <td>0.60 kg CO₂e</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>40 Bottles</strong></td>
+                                    <td>50 Points</td>
+                                    <td>Rs. 50.00</td>
+                                    <td>1.20 kg CO₂e</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>100 Bottles</strong></td>
+                                    <td>125 Points</td>
+                                    <td>Rs. 125.00</td>
+                                    <td>3.00 kg CO₂e</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-telemetry" class="slide-section" data-frame-target="#telemetry-frame-target">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">09.1 / IoT Telemetry</span>
+                        <h2 class="split-line">Automatic 3/4 Capacity Collection Alerts</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">Sensors Alert System</span>
+                                <h4>How the Machine Notifies Us</h4>
+                                <p>Green Loop cabinets integrate smart optical infrared depth beams and weight sensors. When the internal PET compaction bin reaches <strong>3/4 full (75% capacity)</strong>, the unit automatically triggers a high-priority collection alert over its 4G cellular data loop, logging coordinates and capacity warnings directly to the JKH Central Dashboard.</p>
+                            </div>
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Logistics Dispatch Cycles</span>
+                                <h4>Avoiding Overflow Scenarios</h4>
+                                <p>By alerting logistics coordinators at the 75% threshold rather than full capacity, the system guarantees a 12-to-24-hour response buffer. This prevents machine overflow issues, maintains continuous uptime, and optimizes truck routing based on real-time fill rates.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div id="telemetry-frame-target" class="placeholder-frame has-image ratio-16-9" style="width: 100%;">
+                                <img src="assets/esg_dashboard_mockup.png" alt="ESG Telemetry Cloud Dashboard">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-logistics" class="slide-section" data-frame-target="#logistics-frame-target" data-blob1-color="#3D8B37" data-blob1-x="-15vw" data-blob1-y="20vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="1.0">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">09.2 / Logistics Loop</span>
+                        <h2 class="split-line">Reverse Logistics Collection Path</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column" style="display: flex; flex-direction: column; justify-content: center; gap: var(--space-xs);">
+                            <div class="overview-box reveal-element" id="logistics-frame-target">
+                                <span class="mono-label">Reverse Logistics Cycle</span>
+                                <div class="operations-flow" style="gap: 8px; margin-top: 10px;">
+                                    <div class="operations-step" style="padding: 6px 12px;">
+                                        <span class="step-badge" style="padding: 2px 6px;">01</span>
+                                        <p style="font-size: 0.75rem;"><strong>Compaction:</strong> RVM motor crushes PET bottles on-site, saving bin space.</p>
+                                    </div>
+                                    <div class="operations-step" style="padding: 6px 12px;">
+                                        <span class="step-badge" style="padding: 2px 6px;">02</span>
+                                        <p style="font-size: 0.75rem;"><strong>Infrared telemetry:</strong> IR sensors trigger pickup alert at 75% volume.</p>
+                                    </div>
+                                    <div class="operations-step" style="padding: 6px 12px;">
+                                        <span class="step-badge" style="padding: 2px 6px;">03</span>
+                                        <p style="font-size: 0.75rem;"><strong>Fleet dispatch:</strong> SLRA logistics dispatches transport truck to collect flakes.</p>
+                                    </div>
+                                    <div class="operations-step" style="padding: 6px 12px;">
+                                        <span class="step-badge" style="padding: 2px 6px;">04</span>
+                                        <p style="font-size: 0.75rem;"><strong>Downstream:</strong> Compacted flakes delivered to Eco-Spindles for processing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div class="placeholder-frame has-image ratio-16-9" style="width: 100%; max-width: 320px;">
+                                <img src="assets/rvm_front_view.png" alt="RVM Front-View Render">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-journey" class="slide-section" data-frame-hide="true" data-blob1-color="#6DBB45" data-blob1-x="10vw" data-blob1-y="30vh" data-blob1-scale="1.2" data-blob2-color="#FFD54A" data-blob2-x="-25vw" data-blob2-y="20vh" data-blob2-scale="1.1">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">10.1 / Journey Map</span>
+                        <h2 class="split-line">Shopper Recycle & Reward Journey Map</h2>
+                    </div>
+                    <div class="journey-flow reveal-element">
+                        <!-- Progress Timeline Line -->
+                        <div class="journey-progress-container">
+                            <div class="journey-progress-bg"></div>
+                            <div class="journey-progress-fill"></div>
+                            <div class="journey-progress-dot"></div>
+                        </div>
+
+                        <!-- Step 1 -->
+                        <div class="journey-step">
+                            <div class="journey-step-num">1</div>
+                            <h4>Discovery</h4>
+                            <p>Customer enters Keells Super with a bag of bottles and spots the RVM lobby wrap.</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="journey-step">
+                            <div class="journey-step-num">2</div>
+                            <h4>Auth Scan</h4>
+                            <p>Scans the Keells companion app Nexus QR barcode at the screen reader.</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="journey-step">
+                            <div class="journey-step-num">3</div>
+                            <h4>Deposit</h4>
+                            <p>Feeds clean PET bottles. RVM compacts them and logs quantities.</p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="journey-step">
+                            <div class="journey-step-num">4</div>
+                            <h4>Rewards</h4>
+                            <p>Nexus points (25 pts/20 bottles) post instantly to the shopper profile.</p>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="journey-step">
+                            <div class="journey-step-num">5</div>
+                            <h4>Redeem</h4>
+                            <p>Customer redeems points at the checkout lane, lowering bill total.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-habit-loop" class="slide-section" data-frame-target="#loop-frame-target" data-blob1-color="#3D8B37" data-blob1-x="-15vw" data-blob1-y="30vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="0.9">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">10.2 / Habit Loop</span>
+                        <h2 class="split-line">Behavioral Science & Habit Formation</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">The Habit Loop Feedback Mechanics</span>
+                                <h4>Cue -> Action -> Reward Loop</h4>
+                                <ul style="list-style-type: square; margin-left: 20px; font-size: 0.8rem; line-height: 1.6; color: var(--color-text-muted);">
+                                    <li><strong>Cue:</strong> Seeing the bright RVM cabinet in the Keells lobby with grocery bags in hand.</li>
+                                    <li><strong>Action:</strong> Feeding clean plastic bottles into the machine.</li>
+                                    <li><strong>Reward:</strong> Earning Keells Nexus points and seeing carbon savings update in real time.</li>
+                                    <li><strong>Repeat:</strong> Lowering the final shopping checkout bill encourages repeating the action.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div id="loop-frame-target" class="placeholder-frame ratio-4-3 transparent-bg" style="width: 100%;">
+                                <div class="behavioral-loop-container">
+                                    <svg class="behavioral-loop-svg" viewBox="0 0 240 240">
+                                        <!-- Connecting Arc Paths -->
+                                        <path class="loop-path path-1" d="M 120 40 A 80 80 0 0 1 200 120" fill="none" stroke="rgba(46, 46, 46, 0.1)" stroke-width="2" marker-end="url(#arrow)" />
+                                        <path class="loop-path path-2" d="M 200 120 A 80 80 0 0 1 120 200" fill="none" stroke="rgba(46, 46, 46, 0.1)" stroke-width="2" marker-end="url(#arrow)" />
+                                        <path class="loop-path path-3" d="M 120 200 A 80 80 0 0 1 40 120" fill="none" stroke="rgba(46, 46, 46, 0.1)" stroke-width="2" marker-end="url(#arrow)" />
+                                        <path class="loop-path path-4" d="M 40 120 A 80 80 0 0 1 120 40" fill="none" stroke="rgba(46, 46, 46, 0.1)" stroke-width="2" marker-end="url(#arrow)" />
+
+                                        <!-- Marker definition for arrows -->
+                                        <defs>
+                                            <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                                                <path d="M 0 2 L 8 5 L 0 8 z" fill="var(--color-keells-green)" />
+                                            </marker>
+                                        </defs>
+
+                                        <!-- Nodes -->
+                                        <!-- Cue -->
+                                        <g class="loop-node node-1" transform="translate(120, 40)">
+                                            <circle r="22" fill="var(--color-bg-primary)" stroke="var(--color-border-default)" stroke-width="1.5" />
+                                            <text class="node-num" y="-4" text-anchor="middle" font-size="8" font-family="var(--font-heading)">01</text>
+                                            <text class="node-lbl" y="8" text-anchor="middle" font-size="8" font-weight="600" font-family="var(--font-heading)">CUE</text>
+                                        </g>
+                                        
+                                        <!-- Action -->
+                                        <g class="loop-node node-2" transform="translate(200, 120)">
+                                            <circle r="22" fill="var(--color-bg-primary)" stroke="var(--color-border-default)" stroke-width="1.5" />
+                                            <text class="node-num" y="-4" text-anchor="middle" font-size="8" font-family="var(--font-heading)">02</text>
+                                            <text class="node-lbl" y="8" text-anchor="middle" font-size="8" font-weight="600" font-family="var(--font-heading)">ACTION</text>
+                                        </g>
+
+                                        <!-- Reward -->
+                                        <g class="loop-node node-3" transform="translate(120, 200)">
+                                            <circle r="22" fill="var(--color-bg-primary)" stroke="var(--color-border-default)" stroke-width="1.5" />
+                                            <text class="node-num" y="-4" text-anchor="middle" font-size="8" font-family="var(--font-heading)">03</text>
+                                            <text class="node-lbl" y="8" text-anchor="middle" font-size="8" font-weight="600" font-family="var(--font-heading)">REWARD</text>
+                                        </g>
+
+                                        <!-- Repeat -->
+                                        <g class="loop-node node-4" transform="translate(40, 120)">
+                                            <circle r="22" fill="var(--color-bg-primary)" stroke="var(--color-border-default)" stroke-width="1.5" />
+                                            <text class="node-num" y="-4" text-anchor="middle" font-size="8" font-family="var(--font-heading)">04</text>
+                                            <text class="node-lbl" y="8" text-anchor="middle" font-size="8" font-weight="600" font-family="var(--font-heading)">REPEAT</text>
+                                        </g>
+
+                                        <!-- Traveling glowing dot -->
+                                        <circle class="loop-glowing-dot" r="5" fill="var(--color-keells-green)" style="display: none; filter: drop-shadow(0 0 5px rgba(109, 187, 69, 0.8));" />
+                                    </svg>
+                                </div>
+                                <span class="frame-label" style="font-size: 0.75rem;">[ Behavioral Loop: Cue (Lobby view) -> Action (Recycle) -> Reward (Nexus discount) ]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-bus-model" class="slide-section" data-frame-target="#revenue-frame-target">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">11.1 / Value Stream</span>
+                        <h2 class="split-line">Joint Strategic Value & PET Sales</h2>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="overview-text-column">
+                            <div class="overview-box reveal-element" style="margin-bottom: var(--space-sm);">
+                                <span class="mono-label">Primary Strategy: Loyalty Retention</span>
+                                <h4>Groceries Basket & Retention Drive</h4>
+                                <p>The primary value driver for Keells Super is customer retention and brand equity. Shoppers earn points specifically redeemable at Keells, drawing eco-conscious customers away from competitors and increasing monthly supermarket basket spend. Customers develop a clear visual association: Keells is their main hub for recycling.</p>
+                            </div>
+                            <div class="overview-box reveal-element">
+                                <span class="mono-label">Secondary Revenue: PET Sales</span>
+                                <h4>Industrial Raw Material Sales</h4>
+                                <p>Compaction on-site turns bulk bottles into clean PET flakes. Green Loop sells these pre-compacted flakes directly to Eco-Spindles as high-grade industrial raw materials for conversion to recycled apparel fiber. The sales proceeds directly fund loyalty point subsidies and offset reverse logistics transport costs.</p>
+                            </div>
+                        </div>
+                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
+                            <div id="revenue-frame-target" class="placeholder-frame ratio-4-3" style="width: 100%;">
+                                <svg class="reveal-element" viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; background: #FFFFFF; padding: 15px; border-radius: 6px;" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="200" cy="150" r="110" fill="none" stroke="rgba(109, 187, 69, 0.05)" stroke-width="1.5" stroke-dasharray="4 4" />
+                                    <g transform="translate(200, 60)">
+                                        <circle cx="0" cy="0" r="30" fill="var(--color-keells-green-light)" stroke="var(--color-keells-green-dark)" stroke-width="1.5" />
+                                        <text x="0" y="-3" font-family="var(--font-heading)" font-size="9" font-weight="800" fill="var(--color-text-charcoal)" text-anchor="middle">1. SHOPPER</text>
+                                        <text x="0" y="8" font-family="var(--font-mono)" font-size="7" fill="var(--color-text-muted)" text-anchor="middle">Depositor</text>
+                                    </g>
+                                    <g transform="translate(100, 210)">
+                                        <circle cx="0" cy="0" r="30" fill="var(--color-keells-green-light)" stroke="var(--color-keells-green-dark)" stroke-width="1.5" />
+                                        <text x="0" y="-3" font-family="var(--font-heading)" font-size="9" font-weight="800" fill="var(--color-text-charcoal)" text-anchor="middle">2. KEELLS</text>
+                                        <text x="0" y="8" font-family="var(--font-mono)" font-size="7" fill="var(--color-text-muted)" text-anchor="middle">RVM / Points</text>
+                                    </g>
+                                    <g transform="translate(300, 210)">
+                                        <circle cx="0" cy="0" r="30" fill="var(--color-keells-green-light)" stroke="var(--color-keells-green-dark)" stroke-width="1.5" />
+                                        <text x="0" y="-3" font-family="var(--font-heading)" font-size="9" font-weight="800" fill="var(--color-text-charcoal)" text-anchor="middle">3. PARTNER</text>
+                                        <text x="0" y="8" font-family="var(--font-mono)" font-size="7" fill="var(--color-text-muted)" text-anchor="middle">Eco-Spindles</text>
+                                    </g>
+                                    <path d="M 180,80 Q 130,120 100,170" fill="none" stroke="var(--color-text-charcoal)" stroke-width="1.5" />
+                                    <polygon points="100,170 108,165 102,160" fill="var(--color-text-charcoal)" />
+                                    <text x="120" y="115" font-family="var(--font-heading)" font-size="8" font-weight="700" fill="var(--color-text-charcoal)" transform="rotate(-40 120 115)">Bottle Deposit</text>
+                                    <path d="M 120,185 Q 150,140 185,90" fill="none" stroke="var(--color-keells-green)" stroke-width="1.5" stroke-dasharray="3 1" />
+                                    <polygon points="185,90 178,93 182,98" fill="var(--color-keells-green)" />
+                                    <text x="165" y="145" font-family="var(--font-heading)" font-size="8" font-weight="700" fill="var(--color-keells-green-dark)" transform="rotate(-40 165 145)">Nexus Points</text>
+                                    <path d="M 135,215 L 265,215" fill="none" stroke="var(--color-keells-green)" stroke-width="1.5" />
+                                    <polygon points="265,215 258,211 258,219" fill="var(--color-keells-green-dark)" />
+                                    <text x="200" y="207" font-family="var(--font-heading)" font-size="8" font-weight="700" fill="var(--color-keells-green-dark)" text-anchor="middle">Compacted Flakes</text>
+                                    <path d="M 295,175 Q 265,120 220,80" fill="none" stroke="var(--color-text-charcoal)" stroke-width="1.5" stroke-dasharray="3 3" />
+                                    <polygon points="220,80 228,81 224,87" fill="var(--color-text-charcoal)" />
+                                    <text x="270" y="125" font-family="var(--font-heading)" font-size="8" font-weight="700" fill="var(--color-text-charcoal)" transform="rotate(40 270 125)">Recycled Products</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-bus-financials" class="slide-section" data-frame-target=".strategy-table-wrapper" data-blob1-color="#3D8B37" data-blob1-x="-15vw" data-blob1-y="30vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="1.0">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">12.1 / Projections</span>
+                        <h2 class="split-line">Three-Year Financial Projections & Budgeting</h2>
+                    </div>
+                    <div class="strategy-table-wrapper reveal-element" style="margin-bottom: var(--space-xs);">
+                        <table class="strategy-table" style="font-size: 0.75rem;">
+                            <thead>
+                                <tr>
+                                    <th>Ecosystem Financial Item</th>
+                                    <th>Year 1 (Pilot Hubs)</th>
+                                    <th>Year 2 (Regional Expansion)</th>
+                                    <th>Year 3 (Maturity Phase)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>RVM Kiosk Procurement (CAPEX)</strong></td>
+                                    <td>Rs. 4,500,000</td>
+                                    <td>Rs. 18,000,000</td>
+                                    <td>Rs. 45,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Operational & Fleet Logistics (OPEX)</strong></td>
+                                    <td>Rs. 650,000</td>
+                                    <td>Rs. 2,400,000</td>
+                                    <td>Rs. 5,800,000</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Points Subsidy & Reward Cost</strong></td>
+                                    <td>Rs. 1,200,000</td>
+                                    <td>Rs. 4,800,000</td>
+                                    <td>Rs. 12,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>PET Flakes Material Sales Revenue</strong></td>
+                                    <td>Rs. 950,000</td>
+                                    <td>Rs. 3,800,000</td>
+                                    <td>Rs. 9,500,000</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ESG Subsidies & Brand Sponsorship</strong></td>
+                                    <td>Rs. 1,500,000</td>
+                                    <td>Rs. 6,000,000</td>
+                                    <td>Rs. 15,000,000</td>
+                                </tr>
+                                <tr style="background-color: rgba(109, 187, 69, 0.04);">
+                                    <td><strong>Net Circular Valuation / Return</strong></td>
+                                    <td><strong>Strategic Positive</strong></td>
+                                    <td><strong>Payback Achieved</strong></td>
+                                    <td><strong>High-Yield Circularity</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="reveal-element" style="padding: 10px; background: rgba(109, 187, 69, 0.04); border-radius: 4px; display: flex; justify-content: space-between; font-size: 0.75rem;">
+                        <span><strong>Funding Strategy:</strong> John Keells Foundation CSR grant (1% of JKH annual profit allocations)</span>
+                        <span><strong>Break-even:</strong> Year 2 Payback</span>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-bus-roadmap" class="slide-section" data-frame-hide="true" data-blob1-color="#6DBB45" data-blob1-x="10vw" data-blob1-y="30vh" data-blob1-scale="1.2" data-blob2-color="#FFD54A" data-blob2-x="-25vw" data-blob2-y="20vh" data-blob2-scale="1.1">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">13.1 / Scaling Phases</span>
+                        <h2 class="split-line">Future Roadmap & Island-Wide Scaling</h2>
+                    </div>
+                    <div class="operations-flow reveal-element">
+                        
+                        <div class="operations-step">
+                            <span class="step-badge">Phase 1</span>
+                            <div class="step-details">
+                                <h4>Pilot Launch (Colombo Metro)</h4>
+                                <p>Deploy 10 smart RVM kiosk units across high-volume Colombo Keells supermarkets. Verify telemetry, Nexus API loyalty speeds, and SLRA collection logistics.</p>
+                            </div>
+                        </div>
+
+                        <div class="operations-step">
+                            <span class="step-badge">Phase 2</span>
+                            <div class="step-details">
+                                <h4>Island-Wide Supermarket Rollout</h4>
+                                <p>Scale up to all Keells Super outlets nationwide (130+ locations). Launch regional school recycling leaderboards and POS checkouts marketing campaigns.</p>
+                            </div>
+                        </div>
+
+                        <div class="operations-step">
+                            <span class="step-badge">Phase 3</span>
+                            <div class="step-details">
+                                <h4>Next-Gen Smart Materials Sorting</h4>
+                                <p>Introduce multi-sensor sorting RVM cabinets supporting aluminum cans and smart glass sorting. Launch nationwide campaigns for Nature's Special Days.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-future-education" class="slide-section" data-frame-target="#education-frame-target" data-blob1-color="#3D8B37" data-blob1-x="-15vw" data-blob1-y="30vh" data-blob1-scale="1.1" data-blob2-color="#FFD54A" data-blob2-x="20vw" data-blob2-y="-10vh" data-blob2-scale="0.9">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">13.2 / Educational outreach</span>
+                        <h2 class="split-line">School Fields Trips & Civic Leaderboards</h2>
+                    </div>
+                    <div class="grid grid-3" id="education-frame-target">
+                        <div class="overview-box reveal-element">
+                            <span class="mono-label">13.2.1 School Recycling Programs</span>
+                            <h4>Curriculum-Linked Field Trips</h4>
+                            <p>JKH partners with local schools to run circular economy field trips to select Keells outlets. Children learn how depositing empty plastic bottles connects directly to sustainable apparel yarn manufacture at Eco-Spindles.</p>
+                        </div>
+                        <div class="overview-box reveal-element">
+                            <span class="mono-label">13.2.2 Supermarket Leaderboards</span>
+                            <h4>Civic Gamification & Pride</h4>
+                            <p>To foster friendly neighborhood competition, RVM touchscreens and companion app displays showcase monthly recycling leaderboard metrics for local schools and residential sectors, gamifying circular habits.</p>
+                        </div>
+                        <div class="overview-box reveal-element">
+                            <span class="mono-label">13.2.3 Community Collection Drives</span>
+                            <h4>Regional Clean-Up Competitions</h4>
+                            <p>School-sponsored recycling campaigns, rewarding the top-depositing classrooms with Eco-Spindles recycled cotton uniforms and school gear, encouraging active student participation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<section id="slide-mkt-calendar" class="slide-section" data-frame-target=".strategy-table-wrapper" data-blob1-color="#6DBB45" data-blob1-x="10vw" data-blob1-y="20vh" data-blob1-scale="1.2" data-blob2-color="#FFD54A" data-blob2-x="-25vw" data-blob2-y="20vh" data-blob2-scale="1.1">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-num">13.3 / Calendar Campaigns</span>
+                        <h2 class="split-line">Nature's Special Days Promotional Calendar</h2>
+                    </div>
+                    <div class="strategy-table-wrapper reveal-element">
+                        <table class="strategy-table">
+                            <thead>
+                                <tr>
+                                    <th>Special Day</th>
+                                    <th>Target Date</th>
+                                    <th>Promotional Activation Campaign</th>
+                                    <th>Reward Incentive</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Earth Day</strong></td>
+                                    <td>April 22</td>
+                                    <td>Double points deposits: "Feed the Earth, double your grocery savings."</td>
+                                    <td>50 Nexus Pts (20 bottles)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>World Environment Day</strong></td>
+                                    <td>June 5</td>
+                                    <td>School cleanup drives: double points for student group deposits.</td>
+                                    <td>50 Nexus Pts (20 bottles)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>World Oceans Day</strong></td>
+                                    <td>June 8</td>
+                                    <td>Ocean plastic recovery credit: double reward for beach clean PET collections.</td>
+                                    <td>50 Nexus Pts (20 bottles)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>International Recycling Day</strong></td>
+                                    <td>November 17</td>
+                                    <td>Annual circular award: top neighborhood recycler reward ceremony.</td>
+                                    <td>Keells Vouchers (Rs. 1000)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Slide Overlay Footer -->
+        <footer class="site-footer">
+            <div class="footer-top-bar"></div>
+            <div class="container footer-container">
+                <div class="footer-meta">
+                    <span class="mono-label">Company</span>
+                    <span class="footer-val">[ John Keells Holdings PLC ]</span>
+                </div>
+                <div class="footer-meta">
+                    <span class="mono-label">Version</span>
+                    <span class="footer-val">[ Version 1.0 — Approved ]</span>
+                </div>
+                <div class="footer-meta">
+                    <span class="mono-label">Updated Date</span>
+                    <span class="footer-val">[ June 26, 2026 ]</span>
+                </div>
+                <div class="footer-meta">
+                    <span class="mono-label">Copyright</span>
+                    <span class="footer-val">[ Copyright &copy; 2026. All Rights Reserved. ]</span>
+                </div>
+                <div class="footer-brand">
+                    <div class="logo-symbol" style="width:28px;height:28px;">
+                        <span class="symbol-dot"></span>
+                        <svg class="symbol-ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" stroke-width="6" stroke-dasharray="180 80" fill="none" /></svg>
+                    </div>
+                    <span style="font-family:var(--font-heading);font-size:0.9rem;font-weight:500;color:var(--color-text-charcoal);">Green Loop</span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Shared Morph Modal Overlay -->
+    <div id="morph-overlay" class="morph-overlay">
+        <div class="morph-modal-bg"></div>
+        <div class="morph-modal-card">
+            <button class="morph-modal-close" aria-label="Close details">&times;</button>
+            <div class="morph-modal-content">
+                <span class="mono-label modal-num">01.0</span>
+                <h2 class="modal-title">Specification Details</h2>
+                <div class="modal-placeholder-box placeholder-frame ratio-16-9">
+                    <div class="wireframe-crosshair"></div>
+                    <span class="frame-label modal-frame-label">[ Mockup Label ]</span>
+                </div>
+                <p class="modal-desc">Specification copy details.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS script -->
+    <script src="script.js?v=2.0"></script>
+</body>
+</html>
