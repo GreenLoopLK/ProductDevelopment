@@ -41,7 +41,7 @@
         <div class="shared-canvas-layer">
             <!-- Brand Logo Placeholder -->
             <div class="shared-brand-logo" id="shared-logo">
-                <img src="assets/logo.png" alt="Green Loop Logo" class="brand-logo-img" style="height: 32px; width: auto; display: block; object-fit: contain;">
+                <img src="assets/greenloop_logo.png" alt="Green Loop Logo" class="brand-logo-img" style="height: 32px; width: auto; display: block; object-fit: contain;">
             </div>
             
             <!-- Morphing Blueprint Frame -->
@@ -560,15 +560,60 @@
                     <div class="grid grid-2">
                         <div class="guideline-card reveal-element">
                             <span class="mono-label">03.1.1 Primary Logo</span>
-                            <div class="placeholder-frame has-image ratio-16-9" id="logo-frame-target">
-                                <img src="assets/logo_concept.png" alt="Primary Logo Grid & Construction">
+                            <div class="placeholder-frame ratio-16-9" id="logo-frame-target">
+                                <svg viewBox="0 0 600 338" style="width: 100%; height: 100%; display: block; background: #F9FAFB;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Outer Border / Drafting Frame -->
+                                    <rect x="30" y="30" width="540" height="278" fill="none" stroke="rgba(109, 187, 69, 0.1)" stroke-width="1" stroke-dasharray="4 4" />
+                                    
+                                    <!-- Logo Container -->
+                                    <g transform="translate(130, 120)">
+                                        <!-- Logomark (Green concentric loops) -->
+                                        <g transform="translate(40, 40)">
+                                            <circle cx="0" cy="0" r="32" fill="none" stroke="var(--color-keells-green)" stroke-width="5" />
+                                            <circle cx="0" cy="0" r="20" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="4" />
+                                            <path d="M 0,-32 L 8,-32 L 0,-40 Z" fill="var(--color-keells-green-dark)" />
+                                            <path d="M 0,20 L -8,20 L 0,28 Z" fill="var(--color-keells-green)" />
+                                        </g>
+                                        
+                                        <!-- Wordmark -->
+                                        <text x="95" y="45" font-family="var(--font-heading)" font-size="32" font-weight="800" fill="var(--color-text-charcoal)" letter-spacing="-1">green loop</text>
+                                        <text x="97" y="61" font-family="var(--font-mono)" font-size="9" font-weight="700" fill="var(--color-keells-green-dark)" letter-spacing="2">RECYCLING, REWARDED.</text>
+                                    </g>
+                                    
+                                    <!-- Clear Space Guides -->
+                                    <line x1="80" y1="80" x2="520" y2="80" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                                    <text x="530" y="84" font-family="var(--font-mono)" font-size="8" fill="#EF4444">Safe Margin (1.5X)</text>
+                                    <line x1="80" y1="240" x2="520" y2="240" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                                    <line x1="80" y1="80" x2="80" y2="240" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                                    <line x1="520" y1="80" x2="520" y2="240" stroke="rgba(239, 68, 68, 0.3)" stroke-width="1" stroke-dasharray="2 2" />
+                                    
+                                    <!-- Clear space dimension arrows -->
+                                    <line x1="80" y1="160" x2="120" y2="160" stroke="#EF4444" stroke-width="1" />
+                                    <polygon points="80,160 85,157 85,163" fill="#EF4444" />
+                                    <polygon points="120,160 115,157 115,163" fill="#EF4444" />
+                                    <text x="100" y="152" font-family="var(--font-mono)" font-size="8" fill="#EF4444" text-anchor="middle">1.5X</text>
+                                </svg>
                             </div>
                             <p class="card-desc">The primary horizontal mark, combining the recycling loop logomark with clean custom sans-serif typography. Optimized for retail store lobbies and the physical RVM outer skin.</p>
                         </div>
                         <div class="guideline-card reveal-element">
                             <span class="mono-label">03.1.2 Stacked Variant</span>
-                            <div class="placeholder-frame has-image ratio-16-9">
-                                <img src="assets/logo_variations.png" alt="Stacked Variant Logo Variations">
+                            <div class="placeholder-frame ratio-16-9">
+                                <svg viewBox="0 0 600 338" style="width: 100%; height: 100%; display: block; background: #F9FAFB;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Stacked Logo Spec -->
+                                    <g transform="translate(300, 169)">
+                                        <!-- Logomark -->
+                                        <g transform="translate(0, -50)">
+                                            <circle cx="0" cy="0" r="32" fill="none" stroke="var(--color-keells-green)" stroke-width="5" />
+                                            <circle cx="0" cy="0" r="20" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="4" />
+                                            <path d="M 0,-32 L 8,-32 L 0,-40 Z" fill="var(--color-keells-green-dark)" />
+                                            <path d="M 0,20 L -8,20 L 0,28 Z" fill="var(--color-keells-green)" />
+                                        </g>
+                                        <!-- Wordmark stacked -->
+                                        <text x="0" y="25" font-family="var(--font-heading)" font-size="36" font-weight="800" fill="var(--color-text-charcoal)" letter-spacing="-1" text-anchor="middle">green loop</text>
+                                        <text x="0" y="48" font-family="var(--font-mono)" font-size="10" font-weight="700" fill="var(--color-keells-green-dark)" letter-spacing="2" text-anchor="middle">RECYCLING, REWARDED.</text>
+                                    </g>
+                                </svg>
                             </div>
                             <p class="card-desc">The secondary stacked logo layout, designed for narrow vertical spaces such as coupons, receipts, and companion app screens.</p>
                         </div>
@@ -585,8 +630,56 @@
                     <div class="grid grid-3">
                         <div class="guideline-card reveal-element">
                             <span class="mono-label">03.2.1 Clear Space</span>
-                            <div class="placeholder-frame has-image ratio-1-1" id="geo-frame-target">
-                                <img src="assets/logo_usage.png" alt="Clear Space Specifications">
+                            <div class="placeholder-frame ratio-1-1" id="geo-frame-target">
+                                <svg viewBox="0 0 300 300" style="width: 100%; height: 100%; display: block; padding: 15px; background: #FFFFFF;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Blueprint Grid Background -->
+                                    <g stroke="rgba(109, 187, 69, 0.04)" stroke-width="0.5">
+                                        <line x1="30" y1="0" x2="30" y2="300" />
+                                        <line x1="60" y1="0" x2="60" y2="300" />
+                                        <line x1="90" y1="0" x2="90" y2="300" />
+                                        <line x1="120" y1="0" x2="120" y2="300" />
+                                        <line x1="150" y1="0" x2="150" y2="300" />
+                                        <line x1="180" y1="0" x2="180" y2="300" />
+                                        <line x1="210" y1="0" x2="210" y2="300" />
+                                        <line x1="240" y1="0" x2="240" y2="300" />
+                                        <line x1="270" y1="0" x2="270" y2="300" />
+                                        <line x1="0" y1="30" x2="300" y2="30" />
+                                        <line x1="0" y1="60" x2="300" y2="60" />
+                                        <line x1="0" y1="90" x2="300" y2="90" />
+                                        <line x1="0" y1="120" x2="300" y2="120" />
+                                        <line x1="0" y1="150" x2="300" y2="150" />
+                                        <line x1="0" y1="180" x2="300" y2="180" />
+                                        <line x1="0" y1="210" x2="300" y2="210" />
+                                        <line x1="0" y1="240" x2="300" y2="240" />
+                                        <line x1="0" y1="270" x2="300" y2="270" />
+                                    </g>
+                                    
+                                    <!-- Axis lines -->
+                                    <line x1="150" y1="0" x2="150" y2="300" stroke="rgba(109, 187, 69, 0.15)" stroke-width="1" />
+                                    <line x1="0" y1="150" x2="300" y2="150" stroke="rgba(109, 187, 69, 0.15)" stroke-width="1" />
+                                    
+                                    <!-- 45-degree guide lines -->
+                                    <line x1="0" y1="0" x2="300" y2="300" stroke="rgba(109, 187, 69, 0.2)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    <line x1="300" y1="0" x2="0" y2="300" stroke="rgba(109, 187, 69, 0.2)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    
+                                    <!-- Geometric Rings -->
+                                    <circle cx="150" cy="150" r="80" fill="none" stroke="rgba(46, 46, 46, 0.1)" stroke-width="1" />
+                                    <circle cx="150" cy="150" r="50" fill="none" stroke="rgba(46, 46, 46, 0.1)" stroke-width="1" stroke-dasharray="2 2" />
+                                    
+                                    <circle cx="150" cy="150" r="64" fill="none" stroke="var(--color-keells-green)" stroke-width="3" />
+                                    <circle cx="150" cy="150" r="40" fill="none" stroke="var(--color-keells-green-dark)" stroke-width="2.5" />
+                                    
+                                    <!-- Dimension labels and extension arrows -->
+                                    <line x1="150" y1="150" x2="206" y2="94" stroke="#EF4444" stroke-width="1" />
+                                    <polygon points="206,94 199,96 203,101" fill="#EF4444" />
+                                    <text x="185" y="112" font-family="var(--font-mono)" font-size="8" font-weight="700" fill="#EF4444" transform="rotate(-45 185 112)">R=80px</text>
+                                    
+                                    <!-- Center compass mark -->
+                                    <circle cx="150" cy="150" r="2" fill="#EF4444" />
+                                    
+                                    <text x="155" y="145" font-family="var(--font-mono)" font-size="8" fill="#EF4444">Center (0,0)</text>
+                                    <text x="210" y="85" font-family="var(--font-mono)" font-size="8" fill="var(--color-text-muted)">45° Angle Sweep</text>
+                                </svg>
                             </div>
                             <p class="card-desc">A strict minimum clear space boundary equal to 1.5 times the radius of the outer symbol ring must surround the entire logomark, keeping it free from surrounding visual clutter.</p>
                         </div>
@@ -615,8 +708,28 @@
                         </div>
                         <div class="guideline-card reveal-element">
                             <span class="mono-label">03.2.3 Restrictions</span>
-                            <div class="placeholder-frame has-image ratio-1-1">
-                                <img src="assets/logo_bad_usage.png" alt="Logo Restrictions and Incorrect Usage">
+                            <div class="placeholder-frame ratio-1-1">
+                                <svg viewBox="0 0 300 300" style="width: 100%; height: 100%; display: block; padding: 15px; background: #FFFFFF;" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Logo distorted (squished) -->
+                                    <g transform="translate(80, 100) scale(1.5, 0.8)">
+                                        <circle cx="0" cy="0" r="16" fill="none" stroke="rgba(239, 68, 68, 0.5)" stroke-width="3" />
+                                        <circle cx="0" cy="0" r="10" fill="none" stroke="rgba(239, 68, 68, 0.5)" stroke-width="2" />
+                                    </g>
+                                    <!-- Big red cross over it -->
+                                    <line x1="40" y1="50" x2="120" y2="150" stroke="#EF4444" stroke-width="3" />
+                                    <line x1="120" y1="50" x2="40" y2="150" stroke="#EF4444" stroke-width="3" />
+                                    <text x="80" y="170" font-family="var(--font-heading)" font-size="10" font-weight="700" fill="#EF4444" text-anchor="middle">DO NOT DISTORT</text>
+                                    
+                                    <!-- Logo recolored wrongly -->
+                                    <g transform="translate(220, 100) scale(1.2)">
+                                        <circle cx="0" cy="0" r="16" fill="none" stroke="#3B82F6" stroke-width="3" />
+                                        <circle cx="0" cy="0" r="10" fill="none" stroke="#F59E0B" stroke-width="2" />
+                                    </g>
+                                    <!-- Big red cross over it -->
+                                    <line x1="180" y1="50" x2="260" y2="150" stroke="#EF4444" stroke-width="3" />
+                                    <line x1="260" y1="50" x2="180" y2="150" stroke="#EF4444" stroke-width="3" />
+                                    <text x="220" y="170" font-family="var(--font-heading)" font-size="10" font-weight="700" fill="#EF4444" text-anchor="middle">DO NOT RECOLOR</text>
+                                </svg>
                             </div>
                             <p class="card-desc">Do not recolor elements ad-hoc. Do not distort the circular loop proportions or adjust spacing alignments of the text block.</p>
                         </div>
@@ -630,50 +743,44 @@
                         <span class="section-num">03.3 / Color Specs</span>
                         <h2 class="split-line">Primary & Secondary Color System</h2>
                     </div>
-                    <div class="grid grid-2" id="color-frame-target">
-                        <div class="overview-text-column" style="display: flex; flex-direction: column; justify-content: center; gap: var(--space-xs);">
-                            <!-- Primary Green -->
-                            <div class="color-spec-card reveal-element" style="display: flex; align-items: center; gap: var(--space-xs); margin-bottom: 0; padding: 10px; background: var(--color-bg-secondary); border-radius: 8px; border: 1px solid var(--color-border-default);">
-                                <div class="color-placeholder-box border-keells-green" style="background-color: var(--color-keells-green); width: 80px; height: 80px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                                    <span class="color-val-hex" style="font-size: 0.8rem; color: #FFFFFF; font-weight: bold;">#6DBB45</span>
-                                </div>
-                                <div class="color-spec-details" style="padding-left: 0;">
-                                    <span class="mono-label" style="font-size: 0.65rem;">03.3.1 Primary Accent Green</span>
-                                    <h4 style="margin: 2px 0; font-size: 0.95rem;">Keells Green</h4>
-                                    <p style="margin: 0; font-size: 0.75rem; line-height: 1.4;">Reflects the primary corporate color of Keells Supermarkets. Used as the main accent color, active buttons, and logo markers.</p>
-                                </div>
+                    <div class="grid grid-3" id="color-frame-target">
+                        
+                        <!-- Primary Green -->
+                        <div class="color-spec-card reveal-element">
+                            <div class="color-placeholder-box border-keells-green" style="background-color: var(--color-keells-green);">
+                                <span class="color-val-hex">#6DBB45</span>
                             </div>
-
-                            <!-- Secondary Dark Green -->
-                            <div class="color-spec-card reveal-element" style="display: flex; align-items: center; gap: var(--space-xs); margin-bottom: 0; padding: 10px; background: var(--color-bg-secondary); border-radius: 8px; border: 1px solid var(--color-border-default);">
-                                <div class="color-placeholder-box border-dark" style="background-color: var(--color-keells-green-dark); width: 80px; height: 80px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                                    <span class="color-val-hex" style="font-size: 0.8rem; color: #FFFFFF; font-weight: bold;">#3D8B37</span>
-                                </div>
-                                <div class="color-spec-details" style="padding-left: 0;">
-                                    <span class="mono-label" style="font-size: 0.65rem;">03.3.2 Deep Forest Green</span>
-                                    <h4 style="margin: 2px 0; font-size: 0.95rem;">Downstream Green</h4>
-                                    <p style="margin: 0; font-size: 0.75rem; line-height: 1.4;">Used for dark backgrounds, structural framing lines, and secondary headers. Highlights downstream collection paths.</p>
-                                </div>
-                            </div>
-
-                            <!-- Accent Yellow -->
-                            <div class="color-spec-card reveal-element" style="display: flex; align-items: center; gap: var(--space-xs); margin-bottom: 0; padding: 10px; background: var(--color-bg-secondary); border-radius: 8px; border: 1px solid var(--color-border-default);">
-                                <div class="color-placeholder-box border-light" style="background-color: var(--color-keells-accent-yellow); width: 80px; height: 80px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
-                                    <span class="color-val-hex" style="color: var(--color-text-charcoal); font-size: 0.8rem; font-weight: bold;">#FFD54A</span>
-                                </div>
-                                <div class="color-spec-details" style="padding-left: 0;">
-                                    <span class="mono-label" style="font-size: 0.65rem;">03.3.3 Spotlight Accent Yellow</span>
-                                    <h4 style="margin: 2px 0; font-size: 0.95rem;">Nexus Gold</h4>
-                                    <p style="margin: 0; font-size: 0.75rem; line-height: 1.4;">Reflects the Keells Nexus loyalty program color. Used for highlighting reward payout panels, points figures, and key visual alerts.</p>
-                                </div>
+                            <div class="color-spec-details">
+                                <span class="mono-label">03.3.1 Primary Accent Green</span>
+                                <h4>Keells Green</h4>
+                                <p>Reflects the primary corporate color of Keells Supermarkets. Used as the main accent color, active buttons, and logo markers.</p>
                             </div>
                         </div>
 
-                        <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
-                            <div class="placeholder-frame has-image ratio-16-9" style="width: 100%;">
-                                <img src="assets/colour_palette.png" alt="Color System Palette Specs">
+                        <!-- Secondary Dark Green -->
+                        <div class="color-spec-card reveal-element">
+                            <div class="color-placeholder-box border-dark" style="background-color: var(--color-keells-green-dark);">
+                                <span class="color-val-hex">#3D8B37</span>
+                            </div>
+                            <div class="color-spec-details">
+                                <span class="mono-label">03.3.2 Deep Forest Green</span>
+                                <h4>Downstream Green</h4>
+                                <p>Used for dark backgrounds, structural framing lines, and secondary headers. Highlights downstream collection paths.</p>
                             </div>
                         </div>
+
+                        <!-- Accent Yellow -->
+                        <div class="color-spec-card reveal-element">
+                            <div class="color-placeholder-box border-light" style="background-color: var(--color-keells-accent-yellow);">
+                                <span class="color-val-hex" style="color: var(--color-text-charcoal);">#FFD54A</span>
+                            </div>
+                            <div class="color-spec-details">
+                                <span class="mono-label">03.3.3 Spotlight Accent Yellow</span>
+                                <h4>Nexus Gold</h4>
+                                <p>Reflects the Keells Nexus loyalty program color. Used for highlighting reward payout panels, points figures, and key visual alerts.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -724,17 +831,58 @@
                                 <p>Images are framed symmetrically with the primary subject in the horizontal center. A crop scale grid must maintain comfortable margins, supporting dl templates, standard A4 letterheads, or mobile companion screens without clipping crucial details.</p>
                             </div>
                         </div>
-                        <div class="overview-visual-column" id="photo-frame-target">
-                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-xs); width: 100%;">
-                                <div class="placeholder-frame has-image ratio-4-3">
-                                    <img src="assets/photo_1.png" alt="Photography Art Direction 1">
-                                </div>
-                                <div class="placeholder-frame has-image ratio-4-3">
-                                    <img src="assets/photo_2.png" alt="Photography Art Direction 2">
-                                </div>
-                                <div class="placeholder-frame has-image ratio-4-3">
-                                    <img src="assets/photo_3.png" alt="Photography Art Direction 3">
-                                </div>
+                        <div class="overview-visual-column">
+                            <div class="placeholder-frame ratio-16-9" id="photo-frame-target">
+                                <svg viewBox="0 0 600 338" style="width: 100%; height: 100%; display: block; background: #2E2E2E;" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0" y="0" width="600" height="338" fill="#F3F4F6" opacity="0.9" />
+                                    
+                                    <!-- RVM render drawing in center-left -->
+                                    <rect x="120" y="60" width="120" height="220" fill="#E5E7EB" rx="4" stroke="var(--color-keells-green)" stroke-width="2" />
+                                    <rect x="135" y="80" width="90" height="50" fill="#1F2937" rx="2" />
+                                    <circle cx="180" cy="190" r="16" fill="#10B981" opacity="0.8" />
+                                    <line x1="150" y1="190" x2="210" y2="190" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3" />
+                                    
+                                    <!-- Person silhouette in center-right -->
+                                    <g transform="translate(360, 80)">
+                                        <circle cx="40" cy="30" r="16" fill="var(--color-text-charcoal)" />
+                                        <path d="M 10,60 C 10,50 20,46 40,46 C 60,46 70,50 70,60 L 75,180 L 5,180 Z" fill="var(--color-text-charcoal)" />
+                                        <path d="M 10,90 Q -20,110 -30,120 L -30,130 Q -10,120 15,105 Z" fill="var(--color-text-charcoal)" />
+                                        <rect x="-35" y="115" width="10" height="24" rx="2" fill="var(--color-keells-green)" stroke="var(--color-keells-green-dark)" stroke-width="1" />
+                                        <rect x="-32" y="110" width="4" height="5" fill="var(--color-keells-accent-yellow)" />
+                                    </g>
+                                    
+                                    <!-- Viewfinder Rule of Thirds Grid -->
+                                    <line x1="200" y1="0" x2="200" y2="338" stroke="rgba(239, 68, 68, 0.4)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    <line x1="400" y1="0" x2="400" y2="338" stroke="rgba(239, 68, 68, 0.4)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    <line x1="0" y1="112.6" x2="600" y2="112.6" stroke="rgba(239, 68, 68, 0.4)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    <line x1="0" y1="225.3" x2="600" y2="225.3" stroke="rgba(239, 68, 68, 0.4)" stroke-width="0.8" stroke-dasharray="4 4" />
+                                    
+                                    <!-- Intersection focal points -->
+                                    <circle cx="200" cy="112.6" r="4" fill="none" stroke="#EF4444" stroke-width="1.5" />
+                                    <circle cx="400" cy="112.6" r="4" fill="none" stroke="#EF4444" stroke-width="1.5" />
+                                    <circle cx="200" cy="225.3" r="4" fill="none" stroke="#EF4444" stroke-width="1.5" />
+                                    <circle cx="400" cy="225.3" r="4" fill="none" stroke="#EF4444" stroke-width="1.5" />
+                                    
+                                    <!-- Camera framing corners -->
+                                    <path d="M 20,40 L 20,20 L 40,20" fill="none" stroke="#FFFFFF" stroke-width="2" />
+                                    <path d="M 580,40 L 580,20 L 560,20" fill="none" stroke="#FFFFFF" stroke-width="2" />
+                                    <path d="M 20,298 L 20,318 L 40,318" fill="none" stroke="#FFFFFF" stroke-width="2" />
+                                    <path d="M 580,298 L 580,318 L 560,318" fill="none" stroke="#FFFFFF" stroke-width="2" />
+                                    
+                                    <!-- Center Focus brackets -->
+                                    <path d="M 285,160 Q 285,150 295,150" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+                                    <path d="M 315,160 Q 315,150 305,150" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+                                    <path d="M 285,178 Q 285,188 295,188" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+                                    <path d="M 315,178 Q 315,188 305,188" fill="none" stroke="#FFFFFF" stroke-width="1.5" />
+                                    
+                                    <!-- Viewfinder Overlay Info -->
+                                    <rect x="0" y="318" width="600" height="20" fill="#000000" opacity="0.6" />
+                                    <text x="30" y="331" font-family="var(--font-mono)" font-size="9" fill="#FFFFFF">1/125s</text>
+                                    <text x="80" y="331" font-family="var(--font-mono)" font-size="9" fill="#FFFFFF">F/2.8</text>
+                                    <text x="130" y="331" font-family="var(--font-mono)" font-size="9" fill="#FFFFFF">ISO 200</text>
+                                    <text x="300" y="331" font-family="var(--font-mono)" font-size="9" fill="var(--color-keells-green)" text-anchor="middle">[RULE OF THIRDS GRID]</text>
+                                    <text x="570" y="331" font-family="var(--font-mono)" font-size="9" fill="#FFFFFF" text-anchor="end">RAW 16:9</text>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -986,39 +1134,30 @@
                         </div>
 
                         <!-- Card 7 -->
-                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.7" data-title="RVM Outer Skin Design Spec" data-frame-label="RVM Outer Skin Spec" data-desc="Co-branded RVM visual styling wrapper mockup. Features structural outline diagrams of bottle insertion slots, touchscreen UI housing, and instant loyalty points instructions. Body panel styled in Downstream Green (#3D8B37) and Keells Green (#6DBB45).">
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.7" data-title="RVM Outer Skin Design Spec" data-frame-label="RVM Front View Spec" data-desc="Co-branded RVM visual styling wrapper mockup. Features structural outline diagrams of bottle insertion slots, touchscreen UI housing, and instant loyalty points instructions. Body panel styled in Downstream Green (#3D8B37) and Keells Green (#6DBB45).">
                             <span class="mono-label">03.7.7 RVM Outer Skin</span>
                             <div class="placeholder-frame has-image ratio-4-3">
-                                <img src="assets/machine_appearance_1.png" alt="RVM Outer Skin Spec">
+                                <img src="assets/rvm_front_view.png" alt="RVM Front View Spec">
                             </div>
                             <p class="card-desc">Co-branded RVM outer styling wrapper featuring screen and slot guides.</p>
                         </div>
 
                         <!-- Card 8 -->
-                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.8" data-title="RVM Dimensions & Turnarounds" data-frame-label="RVM Dimensions & Turnarounds Spec" data-desc="Detailed physical footprint and boundary dimensions for lobby installation. Specifies front service access requirements, customer usage clearances, and turnaround space around the RVM kiosk to comply with supermarket accessibility guidelines.">
-                            <span class="mono-label">03.7.8 Dimensions & Turnarounds</span>
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.8" data-title="Lobby Placement Layout Spec" data-frame-label="Supermarket Lobby Floor Plan" data-desc="Detailed lobby placement layout diagram showing RVM kiosk coordinates within the supermarket entry vestibule. Highlights proximity to checkout lane counters and customer service desks to maximize shopper exposure and streamline bag logistics.">
+                            <span class="mono-label">03.7.8 Placement Floor Plan</span>
                             <div class="placeholder-frame has-image ratio-4-3">
-                                <img src="assets/machine_turnarounds.png" alt="RVM Dimensions & Turnarounds">
+                                <img src="assets/store_placement_map.png" alt="Supermarket Lobby Floor Plan">
                             </div>
-                            <p class="card-desc">RVM kiosk physical dimensions, footprint boundaries, and turnaround space specs.</p>
+                            <p class="card-desc">Lobby placement diagram mapping RVM kiosk coordinates near checkout paths.</p>
                         </div>
 
                         <!-- Card 9 -->
-                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.9" data-title="RVM Store Lobby Experience" data-frame-label="RVM Lobby Placement Render" data-desc="High-fidelity perspective render of the co-branded RVM kiosk installed inside a pilot supermarket lobby. Designed to validate customer experience flow, visual line-of-sight exposure, and ease of access.">
+                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.9" data-title="RVM Store Lobby Experience" data-frame-label="RVM Lobby Placement Mockup" data-desc="High-fidelity perspective render of the co-branded RVM kiosk installed inside a pilot supermarket lobby. Designed to validate customer experience flow, visual line-of-sight exposure, and ease of access.">
                             <span class="mono-label">03.7.9 RVM Lobby Placement</span>
                             <div class="placeholder-frame has-image ratio-4-3">
-                                <img src="assets/machine_appearance_2.png" alt="RVM Lobby Placement Mockup">
+                                <img src="assets/rvm_unit_render.png" alt="RVM Lobby Placement Mockup">
                             </div>
                             <p class="card-desc">Perspective render of the RVM kiosk in a supermarket lobby entrance.</p>
-                        </div>
-
-                        <!-- Card 10 -->
-                        <div class="guideline-card horizontal-card" data-morph="card" data-num="03.7.10" data-title="Staff Uniform Design" data-frame-label="Staff Uniform Specifications" data-desc="Green Loop co-branded staff uniforms and apparel designs. Features comfortable polo shirt designs with green loop logomark on chest and back, using recycled PET fabric to model sustainable practices in action. Styled in Downstream Green (#3D8B37) and Keells Green (#6DBB45).">
-                            <span class="mono-label">03.7.10 Staff Uniforms</span>
-                            <div class="placeholder-frame has-image ratio-4-3">
-                                <img src="assets/dress.png" alt="Staff Uniform Specifications">
-                            </div>
-                            <p class="card-desc">Co-branded eco-friendly uniforms for store ambassadors and support staff.</p>
                         </div>
 
                     </div>
@@ -1184,7 +1323,7 @@
                         </div>
                         <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
                             <div id="render-frame-target" class="placeholder-frame has-image ratio-16-9" style="width: 100%; max-width: 320px;">
-                                <img src="assets/machine_appearance_1.png" alt="RVM Supermarket Lobby Render">
+                                <img src="assets/rvm_unit_render.png" alt="RVM Supermarket Lobby Render">
                             </div>
                         </div>
                     </div>
@@ -1287,7 +1426,7 @@
                         </div>
                         <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
                             <div id="placement-frame-target" class="placeholder-frame has-image ratio-16-9" style="width: 100%;">
-                                <img src="assets/machine_turnarounds.png" alt="Lobby Placement Floor Plan">
+                                <img src="assets/store_placement_map.png" alt="Lobby Placement Floor Plan">
                             </div>
                         </div>
                     </div>
@@ -1314,8 +1453,37 @@
                             </div>
                         </div>
                         <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
-                            <div id="screen-frame-target" class="placeholder-frame has-image ratio-4-3" style="width: 100%;">
-                                <img src="assets/closeup_shots_of_machine.png" alt="RVM Touchscreen UI Details">
+                            <div id="screen-frame-target" class="placeholder-frame ratio-4-3" style="width: 100%;">
+                                <svg class="reveal-element" viewBox="0 0 400 300" style="width: 100%; height: 100%; display: block; background: #111827; border-radius: 6px; padding: 0;" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0" y="0" width="400" height="30" fill="#1F2937" />
+                                    <circle cx="200" cy="15" r="2.5" fill="#000000" />
+                                    <rect x="0" y="30" width="400" height="50" fill="var(--color-keells-green-dark)" />
+                                    <text x="20" y="60" font-family="var(--font-heading)" font-size="14" font-weight="800" fill="#FFFFFF">green loop</text>
+                                    <text x="380" y="60" font-family="var(--font-heading)" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="end">Keells Super pilot v1.0</text>
+                                    <g transform="translate(50, 95)">
+                                        <rect x="0" y="0" width="300" height="135" rx="8" fill="#1F2937" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5" />
+                                        <text x="150" y="30" font-family="var(--font-heading)" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">TAP KEELLS NEXUS CARD</text>
+                                        <text x="150" y="45" font-family="var(--font-heading)" font-size="9" fill="var(--color-keells-accent-yellow)" text-anchor="middle">OR SCAN APP BARCODE / QR CODE</text>
+                                        <g transform="translate(135, 60)">
+                                            <rect x="0" y="0" width="30" height="30" fill="#FFFFFF" rx="2" />
+                                            <rect x="3" y="3" width="8" height="8" fill="#000000" />
+                                            <rect x="19" y="3" width="8" height="8" fill="#000000" />
+                                            <rect x="3" y="19" width="8" height="8" fill="#000000" />
+                                            <rect x="15" y="15" width="4" height="4" fill="#000000" />
+                                            <line x1="-15" y1="15" x2="45" y2="15" stroke="#EF4444" stroke-width="1.5" />
+                                            <line x1="-15" y1="15" x2="45" y2="15" stroke="rgba(239, 68, 68, 0.4)" stroke-width="4" />
+                                        </g>
+                                        <text x="150" y="115" font-family="var(--font-mono)" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">INTAKE GATE: [CLOSED] (Awaiting loyalty login)</text>
+                                    </g>
+                                    <g transform="translate(40, 248)">
+                                        <rect x="0" y="0" width="90" height="25" rx="4" fill="var(--color-keells-green)" />
+                                        <text x="45" y="16" font-family="var(--font-heading)" font-size="9" font-weight="800" fill="#FFFFFF" text-anchor="middle">ENGLISH</text>
+                                        <rect x="110" y="0" width="90" height="25" rx="4" fill="#374151" />
+                                        <text x="155" y="16" font-family="var(--font-heading)" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">සිංහල</text>
+                                        <rect x="220" y="0" width="90" height="25" rx="4" fill="#374151" />
+                                        <text x="265" y="16" font-family="var(--font-heading)" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">தமிழ்</text>
+                                    </g>
+                                </svg>
                             </div>
                         </div>
                     </div>
@@ -1469,7 +1637,7 @@
                         </div>
                         <div class="overview-visual-column" style="display: flex; align-items: center; justify-content: center;">
                             <div class="placeholder-frame has-image ratio-16-9" style="width: 100%; max-width: 320px;">
-                                <img src="assets/machine_appearance_1.png" alt="RVM Front-View Render">
+                                <img src="assets/rvm_front_view.png" alt="RVM Front-View Render">
                             </div>
                         </div>
                     </div>
