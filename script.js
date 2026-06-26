@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 y: 40, // 40px from top
                 xPercent: 0,
                 yPercent: 0,
-                scale: 0.7,
+                scale: 1.0,
                 transformOrigin: 'left center',
                 ease: 'none'
             });
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 y: 40,
                 xPercent: 0,
                 yPercent: 0,
-                scale: 0.7,
+                scale: 1.0,
                 opacity: 1,
                 transformOrigin: 'left center'
             });
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 y: '28vh',
                 xPercent: -50,
                 yPercent: -50,
-                scale: 0.9,
+                scale: 2.0,
                 opacity: 0,
                 transformOrigin: 'center center'
             });
@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Logo placeholder fade + scale entrance
             loadTL.to('#shared-logo', {
                 opacity: 1,
-                scale: 1.4,
+                scale: 4.0,
                 duration: 0.8,
                 ease: 'power3.out'
             })
