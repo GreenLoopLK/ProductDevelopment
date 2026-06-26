@@ -204,6 +204,13 @@ body {
     will-change: transform, opacity;
 }
 
+.brand-logo-img {
+    height: 120px; /* Base height for hero page */
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
 /* Logo placeholder box */
 .logo-placeholder-box {
     display: flex;
