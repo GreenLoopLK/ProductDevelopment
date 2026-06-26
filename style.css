@@ -533,18 +533,21 @@ p {
     align-items: center;
     justify-content: center;
     /* Push content below the shared logo which sits at ~28vh */
-    padding-top: 22vh;
-}
-
-.hero-content h1 {
-    margin-bottom: var(--space-sm);
-    /* Hidden initially — GSAP SplitType mask reveals it */
-    overflow: hidden;
+    padding-top: calc(28vh + 144px);
 }
 
 /* Prevent FOUC on hero text before GSAP runs */
 .hero-content .meta-tag {
     opacity: 0;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--color-text-mono);
+    margin-bottom: 24px;
+    display: block;
+    text-align: center;
 }
 .hero-content .hero-cta-wrap {
     opacity: 0;

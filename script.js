@@ -253,7 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             const loadTL = gsap.timeline({ delay: 0.2 });
 
-            const heroHeading = heroSection.querySelector('.split-line');
             const heroTagline = heroSection.querySelector('.tagline');
             const heroMeta = heroSection.querySelector('.meta-tag');
 
@@ -284,16 +283,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }, "-=0.5");
 
             if (prefersReducedMotion) {
-                loadTL.from([heroHeading, heroTagline], { opacity: 0, duration: 1.0, stagger: 0.2 }, "-=0.4");
+                loadTL.from(heroTagline, { opacity: 0, duration: 1.0 }, "-=0.4");
             } else {
-                if (heroHeading && heroHeading.splitWords) {
-                    loadTL.to(heroHeading.splitWords, {
-                        yPercent: 0,
-                        duration: 1.6,
-                        stagger: 0.06,
-                        ease: "power4.out"
-                    }, "-=0.6");
-                }
                 if (heroTagline && heroTagline.splitWords) {
                     loadTL.to(heroTagline.splitWords, {
                         yPercent: 0,
